@@ -7,6 +7,8 @@ In this project I built a honeynet in Microsoft Azure to simulate real-world cyb
 The main objective of this project was to showcase optimal security measures, effective incident response strategies, and the impact of fortifying our Azure environment. 
 This was achieved by [setting up virtual machines that were intentionally vulnerable](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md), lacking safeguards against the public internet. This helped me to better understand the tactics and techniques used by cyber attackers, while also showcasing my ability to respond quickly and effectively to any identified issues.
 
+ <br />
+ 
 ## Methodology
 
 - <b>*Creating the honeynet*</b>: I began by [deploying multiple vulnerable virtual machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an insecure environment.
@@ -18,6 +20,8 @@ This was achieved by [setting up virtual machines that were intentionally vulner
 - <b>*Incident response and remediation*</b>: After addressing the incidents and identifying vulnerabilities, I began the process of hardening the environment by applying security best practices and Azure-specific recommendations.
 
 - <b>*Post-remediation analysis*</b>: I re-observed the environment for another 24 hours to measure security metrics again, comparing the results with the initial baseline.
+
+ <br />
 
 ## Technologies, Regulations, and Azure Components Employed:
 
@@ -35,7 +39,9 @@ This was achieved by [setting up virtual machines that were intentionally vulner
 - [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) for Security Controls
 - [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) for Incident Handling Guidance
 
-## 
+ <br />
+
+
 
 
 
@@ -43,12 +49,19 @@ This was achieved by [setting up virtual machines that were intentionally vulner
 ## Architecture Prior to Implementing Hardening Measures and Security Controls
 ![Architecture Diagram](https://i.imgur.com/1tLjWY9.png)
 
+ <br />
+
 <b>Before Hardening Measures and Security Controls:</b>
 
 - In the "BEFORE" stage of the project, all resources were initially deployed with public exposure to the internet. This setup was intentionally insecure to attract potential cyber attackers and observe their tactics. The Virtual Machines had both their Network Security Groups (NSGs) and built-in firewalls wide open, allowing unrestricted access from any source. Additionally, all other resources, such as storage accounts and databases, were deployed with public endpoints visible to the internet, without utilizing any Private Endpoints for added security.
 
+ <br />
+ 
+
 ## Architecture After Implementing Hardening Measures and Security Controls
 ![Architecture Diagram](https://i.imgur.com/ch1cAMU.png)
+
+ <br />
  <b>For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture. These improvements included:</b>
 
 - <b>Network Security Groups (NSGs)</b>: I hardened the NSGs by blocking all inbound and outbound traffic, with the sole exception of my own public IP address. This ensured that only authorized traffic from a trusted source was allowed to access the virtual machines.
@@ -60,16 +73,11 @@ This was achieved by [setting up virtual machines that were intentionally vulner
 By comparing the security metrics before and after implementing these hardening measures and security controls, I was able to demonstrate the effectiveness of each step in improving the overall security posture of the Azure environment.
 <br />
 
+ <br />
+
 ## Attack Maps Before Hardening / Security Controls
 <br />
 
-
-In the initial "BEFORE" metrics assessment, all resources were deployed with open exposure to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls configured with unrestricted access. Additionally, all other resources were deployed with public endpoints visible to the internet, without utilizing Private Endpoints.
-
-
- <br />
- <br />
- 
 - <b>This attack map demonstrates the consequences of leaving the Network Security Group (NSG) open, as it allowed for malicious traffic to flow unimpeded. This visualization underscores the importance of implementing proper security measures, such as restricting NSG rules, to prevent unauthorized access and minimize potential threats.</b>
 
 
@@ -92,13 +100,14 @@ In the initial "BEFORE" metrics assessment, all resources were deployed with ope
 ![Windows RDP/SMB Auth Failures](https://i.imgur.com/SETmQBl.png)<br>
 
  <br />
- <br />
+
 
 ## Attack Maps After Hardening / Security Controls
 
-> All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.
-
  <br />
+
+```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+
  <br />
  
 ## Metrics Before Hardening / Security Controls
@@ -115,7 +124,7 @@ Stop Time 2023-05-03 17:02:00 PM
 | SecurityIncident (Sentinel Incidents)        | 343
 | NSG Inbound Malicious Flows Allowed | 969
 
-
+ <br />
 
 ## Metrics After Hardening / Security Controls
 
@@ -132,6 +141,26 @@ Stop Time	2023-03-19 15:37
 | SecurityIncident (Sentinel Incidents)        | 0
 | NSG Inbound Malicious Flows Allowed | 0
 
+ <br />
+ 
+## Approach to Handling High-Priority Incidents with NIST Guidelines and Security Controls
+For effective management of high-priority incidents, I adhered to NIST 800-61 (Revision 2) guidelines and implemented security controls specified in NIST SP 800-53 (Revision 5). The approach involved:
+
+- Initiating preparations by establishing a log analytics workspace, configuring Azure Sentinel, and setting up alerts for incident detection. The implementation of NIST SP 800-53 security controls ensured a robust and secure environment.
+- When incidents occurred, I categorized and assessed their severity, conducting thorough investigations into logs to distinguish false from true positives. The incident response procedures outlined in NIST 800-61 (Revision 2) guided this process, evaluating the scope of impact.
+- To streamline incident response, I employed an incident response playbook aligned with NIST 800-61 (Revision 2), documenting incident details comprehensively. Relevant security controls from NIST SP 800-53 (Revision 5) guided the execution of incident response activities.
+- Post-resolution, meticulous documentation of findings, steps taken, and analyses performed was undertaken for each incident. Closure involved indicating the resolution and any necessary follow-up actions while ensuring compliance with NIST SP 800-53 (Revision 5) security controls.
+
+ <br />
+ 
+## Conclusion
+
+In this project, a small-scale honeynet was set up in Microsoft Azure, and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was utilized to generate alerts and incidents based on the processed logs. Furthermore, metrics were assessed in the initially insecure environment, both before and after the implementation of security controls. The substantial decrease in security events and incidents post the application of security measures underscores their efficacy in fortifying the environment.
+
+It's important to note that if the network's resources were heavily utilized by regular users, there could have been a likelihood of generating more security events and alerts in the 24-hour period following the implementation of security controls.
+
+ <br />
+ 
 ## Conclusion
 
 In conclusion, I set up a compact, but effective honeynet using Microsoft Azure's robust cloud infrastructure. Microsoft Sentinel was then utilized to trigger alerts and generate incidents based on the logs ingested from the implemented watch lists. Baseline metrics were recorded in the unprotected environment before the implementation of any security controls. Following this, a range of security measures were enforced to fortify the network against potential threats. Upon implementation of these controls, another set of measurements was taken.
