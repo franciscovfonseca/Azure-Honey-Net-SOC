@@ -3,11 +3,15 @@
 
 ## Introduction
 
-In this project I built a honeynet in Microsoft Azure to simulate real-world cyber attacks. 
+In this project I built a honeynet in **Microsoft Azure** to simulate real-world cyber attacks.
+
 The main objective of this project was to showcase optimal security measures, effective incident response strategies, and the impact of fortifying our Azure environment. 
+
 This was achieved by [setting up virtual machines that were intentionally vulnerable](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md), lacking safeguards against the public internet. This helped me to better understand the tactics and techniques used by cyber attackers, while also showcasing my ability to respond quickly and effectively to any identified issues.
 
  <br />
+
+
  
 ## Methodology
 
