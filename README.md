@@ -7,7 +7,7 @@
 This project showcases my skills in Azure security, incident response, and environment hardening
 
 ## Objective
-The main objective of this project was to [set up virtual machines that were intentionally vulnerable](https://github.com/AmiliaSalva/Azure-VM-Prep/blob/main/README.md) in the Azure infrastructure to attract and analyze cyber attacks. This helped me to better understand the tactics and techniques used by attackers, while also showcasing my ability to respond quickly and effectively to any identified issues.
+The main objective of this project was to [set up virtual machines that were intentionally vulnerable](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in the Azure infrastructure to attract and analyze cyber attacks. This helped me to better understand the tactics and techniques used by attackers, while also showcasing my ability to respond quickly and effectively to any identified issues.
 
 ## Technologies, Regulations, and Azure Components Employed:
 
@@ -27,7 +27,7 @@ The main objective of this project was to [set up virtual machines that were int
 
 ## Methodology
 
-- <b>*Creating the honeynet*</b>: I began by [deploying multiple vulnerable virtual machines](https://github.com/AmiliaSalva/Azure-VM-Prep/blob/main/README.md) in Azure, simulating an insecure environment.
+- <b>*Creating the honeynet*</b>: I began by [deploying multiple vulnerable virtual machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an insecure environment.
 
 - <b>*Monitoring and analysis*</b>: Azure was configured to ingest log sources from various resources into a log analytics workspace. Microsoft Sentinel was then used to build attack maps, trigger alerts, and create incidents based on the collected data.
 
