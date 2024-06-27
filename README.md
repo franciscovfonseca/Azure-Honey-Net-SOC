@@ -1,4 +1,4 @@
-# Azure Honeynet: Simulating Real-World Cyber Attacks
+# Azure Honeynet & SOC: Cyber Attacks in Real Time
 ![Cloud Honeynet / SOC](https://imgur.com/4v9WYM7.png)
 
 ## Introduction
@@ -7,7 +7,9 @@ In this project I built a honeynet in **Microsoft Azure** to simulate real-world
 
 The main objective of this project was to showcase optimal security measures, effective incident response strategies, and the impact of fortifying our Azure environment. 
 
-This was achieved by [setting up virtual machines that were intentionally vulnerable](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md), lacking safeguards against the public internet. This helped me to better understand the tactics and techniques used by cyber attackers, while also showcasing my ability to respond quickly and effectively to any identified issues.
+This was achieved by [setting up virtual machines in Azure that were intentionally vulnerable](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md), lacking safeguards against the public internet.
+
+This helped me to better understand the tactics and techniques used by cyber attackers, while also showcasing my ability to respond quickly and effectively to any identified issues.
 
  <br />
 
@@ -15,15 +17,27 @@ This was achieved by [setting up virtual machines that were intentionally vulner
  
 ## Methodology
 
-- <b>*Creating the honeynet*</b>: I began by [deploying multiple vulnerable virtual machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an insecure environment.
+### 🟢 <b>*Creating the honeynet*</b>:
 
-- <b>*Monitoring and analysis*</b>: Azure was configured to ingest log sources from various resources into a log analytics workspace. Microsoft Sentinel was then used to build attack maps, trigger alerts, and create incidents based on the collected data.
+- I began by [deploying multiple vulnerable virtual machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an insecure environment.
 
-- <b>*Security metrics measurement*</b>: I observed the environment for 24 hours, recording key security metrics while it was insecure. This provided a baseline to compare against after implementing remediation measures.
+### 🟢 <b>*Monitoring and analysis*</b>:
 
-- <b>*Incident response and remediation*</b>: After addressing the incidents and identifying vulnerabilities, I began the process of hardening the environment by applying security best practices and Azure-specific recommendations.
+- Azure was configured to ingest log sources from various resources into a log analytics workspace.
+- Microsoft Sentinel was then used to build attack maps, trigger alerts, and create incidents based on the collected data.
 
-- <b>*Post-remediation analysis*</b>: I re-observed the environment for another 24 hours to measure security metrics again, comparing the results with the initial baseline.
+### 🟢 <b>*Security metrics measurement*</b>:
+
+- I observed the environment for 24 hours, recording key security metrics while it was insecure.
+- This provided a baseline to compare against after implementing remediation measures.
+
+### 🟢 <b>*Incident response and remediation*</b>:
+
+- After addressing the incidents and identifying vulnerabilities, I began the process of hardening the environment by applying security best practices and Azure-specific recommendations.
+
+### 🟢 <b>*Post-remediation analysis*</b>:
+
+- I re-observed the environment for another 24 hours to measure security metrics again, comparing the results with the initial baseline.
 
  <br />
 
@@ -57,9 +71,18 @@ This was achieved by [setting up virtual machines that were intentionally vulner
 
 <b>Before Hardening Measures and Security Controls:</b>
 
-- In the "BEFORE" stage of the project, all resources were initially deployed with public exposure to the internet. This setup was intentionally insecure to attract potential cyber attackers and observe their tactics. The Virtual Machines had both their Network Security Groups (NSGs) and built-in firewalls wide open, allowing unrestricted access from any source. Additionally, all other resources, such as storage accounts and databases, were deployed with public endpoints visible to the internet, without utilizing any Private Endpoints for added security.
+- In the "BEFORE" stage of the project, all resources were initially deployed with public exposure to the internet.
+
+- This setup was intentionally insecure to attract potential cyber attackers and observe their tactics.
+ 
+- The Virtual Machines had both their Network Security Groups (NSGs) and built-in firewalls wide open, allowing unrestricted access from any source.
+
+- Additionally, all other resources, such as storage accounts and databases, were deployed with public endpoints visible to the internet, without utilizing any Private Endpoints for added security.
 
  <br />
+ <br>
+
+ 
  
 
 ## Architecture After Implementing Hardening Measures and Security Controls
