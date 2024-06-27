@@ -1,6 +1,8 @@
 # ☁️🔐 Azure Honeynet & SOC: Cyber Attacks in Real Time 🔐☁️
 ![Cloud Honeynet / SOC](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/c9efb972-1bf8-4c33-a8d4-510a792a27b6)
 
+ <br />
+ 
 ## Introduction
 
 In this project I built a honeynet in **Microsoft Azure** to simulate real-world cyber attacks.
