@@ -67,7 +67,10 @@ This helped me to better understand the tactics and techniques used by cyber att
 
 
 ## Architecture Prior to Implementing Hardening Measures and Security Controls
-![Architecture Diagram](https://i.imgur.com/1tLjWY9.png)
+ <br />
+ 
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/032a0cf5-6ecd-4426-b6d5-64f653d3e497" height="70%" width="70%" alt="9"/><br />
 
  <br />
 
@@ -88,9 +91,13 @@ This helped me to better understand the tactics and techniques used by cyber att
  
 
 ## Architecture After Implementing Hardening Measures and Security Controls
-![Architecture Diagram](https://i.imgur.com/ch1cAMU.png)
+ <br />
+ 
+<p align="center">
+<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/1764e464-4f2d-4565-a351-e64a60495150" height="70%" width="70%" alt="9"/><br />
 
  <br />
+
  <b>For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture. These improvements included:</b>
 
 - <b>Network Security Groups (NSGs)</b>: I hardened the NSGs by blocking all inbound and outbound traffic, with the sole exception of my own public IP address. This ensured that only authorized traffic from a trusted source was allowed to access the virtual machines.
