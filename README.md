@@ -116,38 +116,45 @@ This helped me to better understand the tactics and techniques used by cyber att
 - This ensured that access to sensitive resources, such as storage accounts and databases, was limited to the virtual network and not exposed to the public internet.
 - As a result, these resources were protected from unauthorized access and potential attacks.
 <br />
-<br />
 
+<h3>✅ Result:</h3>
  
-✅ By comparing the security metrics before and after implementing these hardening measures and security controls, I was able to demonstrate the effectiveness of each step in improving the overall security posture of the Azure environment.
+- By comparing the **Security Metrics** *Before* and *After* implementing these **Hardening Measures** and **Security Controls**, I was able to demonstrate the effectiveness of each step in improving the overall **Security Posture** of the **Azure Environment**.
 <br />
 
 <br />
 
-<br />
 
 
 ## Attack Maps BEFORE Hardening Measures and Security Controls
 <br />
 
-- <b>This attack map demonstrates the consequences of leaving the Network Security Group (NSG) open, as it allowed for malicious traffic to flow unimpeded. This visualization underscores the importance of implementing proper security measures, such as restricting NSG rules, to prevent unauthorized access and minimize potential threats.</b>
+This attack map demonstrates the consequences of leaving the Network Security Group (NSG) open, as it allowed for malicious traffic to flow unimpeded.
+
+This visualization underscores the importance of implementing proper security measures, such as restricting NSG rules, to prevent unauthorized access and minimize potential threats.
 
 
 
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/JeElX9R.png)<br>
 
  <br />
+ <h2></h2>
  <br />
  
-- <b>This attack map highlights the numerous syslog authentication failures experienced by the Linux server I deployed, indicating that unauthorized access attempts were made from outisde. This serves as a reminder of the importance of securing Linux servers with strong authentication mechanisms and monitoring system logs for signs of intrusion attempts.</b>
+This attack map highlights the numerous syslog authentication failures experienced by the Linux server I deployed, indicating that unauthorized access attempts were made from outisde.
+
+This serves as a reminder of the importance of securing Linux servers with strong authentication mechanisms and monitoring system logs for signs of intrusion attempts.</b>
  
  
 ![Linux Syslog Auth Failures](https://i.imgur.com/QW8PF0o.png)<br>
 
  <br />
+ <h2></h2>
  <br />
  
-  - <b>This attack map showcases numerous RDP and SMB failures, illustrating the persistent attempts by potential attackers to exploit these protocols. The visualization emphasizes the need for securing remote access and file sharing services to protect against unauthorized access and potential cyber threats.</b>
+This attack map showcases numerous RDP and SMB failures, illustrating the persistent attempts by potential attackers to exploit these protocols.
+
+The visualization emphasizes the need for securing remote access and file sharing services to protect against unauthorized access and potential cyber threats.</b>
  
 ![Windows RDP/SMB Auth Failures](https://i.imgur.com/SETmQBl.png)<br>
 <br />
@@ -163,13 +170,16 @@ This helped me to better understand the tactics and techniques used by cyber att
 
 ```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
 
- <br />
+<br />
+<br />
+<br />
+
  
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-05-02 17:02:00 PM
-Stop Time 2023-05-03 17:02:00 PM
+- Start Time 2023-05-02 17:02:00 PM
+- Stop Time 2023-05-03 17:02:00 PM
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -179,13 +189,15 @@ Stop Time 2023-05-03 17:02:00 PM
 | SecurityIncident (Sentinel Incidents)        | 343
 | NSG Inbound Malicious Flows Allowed | 969
 
- <br />
+<br />
+<br />
+
 
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+- Start Time 2023-03-18 15:37
+- Stop Time	2023-03-19 15:37
 
 
 | Metric                   | Count
@@ -196,17 +208,22 @@ Stop Time	2023-03-19 15:37
 | SecurityIncident (Sentinel Incidents)        | 0
 | NSG Inbound Malicious Flows Allowed | 0
 
- <br />
+<br />
+<br />
  
 ## Approach to Handling High-Priority Incidents with NIST Guidelines and Security Controls
 For effective management of high-priority incidents, I adhered to NIST 800-61 (Revision 2) guidelines and implemented security controls specified in NIST SP 800-53 (Revision 5). The approach involved:
 
 - Initiating preparations by establishing a log analytics workspace, configuring Azure Sentinel, and setting up alerts for incident detection. The implementation of NIST SP 800-53 security controls ensured a robust and secure environment.
+
 - When incidents occurred, I categorized and assessed their severity, conducting thorough investigations into logs to distinguish false from true positives. The incident response procedures outlined in NIST 800-61 (Revision 2) guided this process, evaluating the scope of impact.
+ 
 - To streamline incident response, I employed an incident response playbook aligned with NIST 800-61 (Revision 2), documenting incident details comprehensively. Relevant security controls from NIST SP 800-53 (Revision 5) guided the execution of incident response activities.
+  
 - Post-resolution, meticulous documentation of findings, steps taken, and analyses performed was undertaken for each incident. Closure involved indicating the resolution and any necessary follow-up actions while ensuring compliance with NIST SP 800-53 (Revision 5) security controls.
 
- <br />
+<br />
+<br />
  
 ## Conclusion
 
