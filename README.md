@@ -66,11 +66,11 @@ This helped me to better understand the tactics and techniques used by cyber att
 
 
 
-## Architecture Prior to Implementing Hardening Measures and Security Controls
+## Architecture BEFORE Implementing Hardening Measures and Security Controls
  <br />
  
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/032a0cf5-6ecd-4426-b6d5-64f653d3e497" height="70%" width="70%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/b8d65d09-f229-4026-8819-f4da00fccf54" height="70%" width="70%" alt="9"/><br />
 
  <br />
 
@@ -90,28 +90,32 @@ This helped me to better understand the tactics and techniques used by cyber att
  
  
 
-## Architecture After Implementing Hardening Measures and Security Controls
+## Architecture AFTER Implementing Hardening Measures and Security Controls
  <br />
  
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/1764e464-4f2d-4565-a351-e64a60495150" height="70%" width="70%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/abbf06a8-ccfa-4b17-a9ca-dfe01e8fb358" height="70%" width="70%" alt="9"/><br />
 
  <br />
 
- <b>For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture. These improvements included:</b>
+<b>For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture. These improvements included:</b>
 
 - <b>Network Security Groups (NSGs)</b>: I hardened the NSGs by blocking all inbound and outbound traffic, with the sole exception of my own public IP address. This ensured that only authorized traffic from a trusted source was allowed to access the virtual machines.
 
 - <b>Built-in Firewalls</b>: I configured the built-in firewalls on the virtual machines to restrict access and protect the resources from unauthorized connections. This step involved fine-tuning the firewall rules based on the specific requirements of each VM, thereby minimizing the potential attack surface.
 
 - <b>Private Endpoints</b>: To enhance the security of other Azure resources, I replaced the public endpoints with Private Endpoints. This ensured that access to sensitive resources, such as storage accounts and databases, was limited to the virtual network and not exposed to the public internet. As a result, these resources were protected from unauthorized access and potential attacks.
-
+ <br />
+ 
 By comparing the security metrics before and after implementing these hardening measures and security controls, I was able to demonstrate the effectiveness of each step in improving the overall security posture of the Azure environment.
 <br />
 
- <br />
+<br />
 
-## Attack Maps Before Hardening / Security Controls
+<br />
+
+
+## Attack Maps BEFORE Hardening Measures and Security Controls
 <br />
 
 - <b>This attack map demonstrates the consequences of leaving the Network Security Group (NSG) open, as it allowed for malicious traffic to flow unimpeded. This visualization underscores the importance of implementing proper security measures, such as restricting NSG rules, to prevent unauthorized access and minimize potential threats.</b>
@@ -134,11 +138,14 @@ By comparing the security metrics before and after implementing these hardening 
   - <b>This attack map showcases numerous RDP and SMB failures, illustrating the persistent attempts by potential attackers to exploit these protocols. The visualization emphasizes the need for securing remote access and file sharing services to protect against unauthorized access and potential cyber threats.</b>
  
 ![Windows RDP/SMB Auth Failures](https://i.imgur.com/SETmQBl.png)<br>
+<br />
 
- <br />
+<br />
+
+<br />
 
 
-## Attack Maps After Hardening / Security Controls
+## Attack Maps AFTER Hardening Measures and Security Controls
 
  <br />
 
