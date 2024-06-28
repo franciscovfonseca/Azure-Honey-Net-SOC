@@ -80,9 +80,9 @@ This helped me to better understand the tactics and techniques used by cyber att
 
 - This setup was intentionally insecure to attract potential cyber attackers and observe their tactics.
  
-- The Virtual Machines had both their Network Security Groups (NSGs) and built-in firewalls wide open, allowing unrestricted access from any source.
+- The Virtual Machines had both their **Network Security Groups (NSGs)** and built-in **Firewalls** wide open, allowing unrestricted access from any source.
 
-- Additionally, all other resources, such as storage accounts and databases, were deployed with public endpoints visible to the internet, without utilizing any Private Endpoints for added security.
+- Additionally, all other resources, such as **Storage Accounts** and **Databases**, were deployed with public endpoints visible to the internet, without utilizing any **Private Endpoints** for added security.
 
  <br />
  <br>
@@ -100,14 +100,26 @@ This helped me to better understand the tactics and techniques used by cyber att
 
 <b>For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture. These improvements included:</b>
 
-- <b>Network Security Groups (NSGs)</b>: I hardened the NSGs by blocking all inbound and outbound traffic, with the sole exception of my own public IP address. This ensured that only authorized traffic from a trusted source was allowed to access the virtual machines.
-
-- <b>Built-in Firewalls</b>: I configured the built-in firewalls on the virtual machines to restrict access and protect the resources from unauthorized connections. This step involved fine-tuning the firewall rules based on the specific requirements of each VM, thereby minimizing the potential attack surface.
-
-- <b>Private Endpoints</b>: To enhance the security of other Azure resources, I replaced the public endpoints with Private Endpoints. This ensured that access to sensitive resources, such as storage accounts and databases, was limited to the virtual network and not exposed to the public internet. As a result, these resources were protected from unauthorized access and potential attacks.
- <br />
+<h4>1️⃣ Network Security Groups (NSGs)</h4>
  
-By comparing the security metrics before and after implementing these hardening measures and security controls, I was able to demonstrate the effectiveness of each step in improving the overall security posture of the Azure environment.
+ - I hardened the NSGs by blocking all inbound and outbound traffic, with the sole exception of my own public IP address.
+ - This ensured that only authorized traffic from a trusted source was allowed to access the virtual machines.
+ 
+<h4>2️⃣ Built-in Firewalls</h4>
+
+- I configured the built-in firewalls on the virtual machines to restrict access and protect the resources from unauthorized connections.
+- This step involved fine-tuning the firewall rules based on the specific requirements of each VM, thereby minimizing the potential attack surface.
+
+<h4>3️⃣ Private Endpoints</h4>
+
+- To enhance the security of other Azure resources, I replaced the public endpoints with Private Endpoints.
+- This ensured that access to sensitive resources, such as storage accounts and databases, was limited to the virtual network and not exposed to the public internet.
+- As a result, these resources were protected from unauthorized access and potential attacks.
+<br />
+<br />
+
+ 
+✅ By comparing the security metrics before and after implementing these hardening measures and security controls, I was able to demonstrate the effectiveness of each step in improving the overall security posture of the Azure environment.
 <br />
 
 <br />
