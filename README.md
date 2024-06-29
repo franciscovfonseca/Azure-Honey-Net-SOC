@@ -70,7 +70,7 @@ This helped me to better understand the tactics and techniques used by cyber att
  <br />
  
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/b8d65d09-f229-4026-8819-f4da00fccf54" height="70%" width="70%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/5cf1c278-756a-4bcb-a08f-271078a8bcba" height="70%" width="70%" alt="9"/><br />
 
  <br />
 
@@ -94,7 +94,7 @@ This helped me to better understand the tactics and techniques used by cyber att
  <br />
  
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/abbf06a8-ccfa-4b17-a9ca-dfe01e8fb358" height="70%" width="70%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/5789d984-10bc-4ada-8dc7-763722ad9b67" height="70%" width="70%" alt="9"/><br />
 
  <br />
 
@@ -129,11 +129,11 @@ This helped me to better understand the tactics and techniques used by cyber att
 ## Attack Maps BEFORE Hardening Measures and Security Controls
 <br />
 
-This attack map demonstrates the consequences of leaving the Network Security Group (NSG) open, as it allowed for malicious traffic to flow unimpeded.
+This attack map demonstrates the consequences of leaving the **Network Security Group (NSG)** open, as it allowed for malicious traffic to flow unimpeded.
 
-This visualization underscores the importance of implementing proper security measures, such as restricting NSG rules, to prevent unauthorized access and minimize potential threats.
+This visualization underscores the importance of implementing proper security measures, such as **Restricting NSG Rules**, to Prevent Unauthorized Access and Minimize Potential Threats.
 
-
+<br>
 
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/JeElX9R.png)<br>
 
@@ -141,24 +141,25 @@ This visualization underscores the importance of implementing proper security me
  <h2></h2>
  <br />
  
-This attack map highlights the numerous syslog authentication failures experienced by the Linux server I deployed, indicating that unauthorized access attempts were made from outisde.
+This attack map highlights the numerous **Syslog Authentication Failures** experienced by the **Linux Server** I deployed, indicating that unauthorized access attempts were made from outisde.
 
-This serves as a reminder of the importance of securing Linux servers with strong authentication mechanisms and monitoring system logs for signs of intrusion attempts.</b>
- 
- 
+This serves as a reminder of the importance of securing Linux servers with **Strong Authentication Mechanisms** and **Monitoring System Logs** for signs of intrusion attempts.
+
+<br>
+
 ![Linux Syslog Auth Failures](https://i.imgur.com/QW8PF0o.png)<br>
 
  <br />
  <h2></h2>
  <br />
  
-This attack map showcases numerous RDP and SMB failures, illustrating the persistent attempts by potential attackers to exploit these protocols.
+This attack map showcases numerous **RDP and SMB Failures**, illustrating the persistent attempts by potential attackers to exploit these protocols.
 
-The visualization emphasizes the need for securing remote access and file sharing services to protect against unauthorized access and potential cyber threats.</b>
+The visualization emphasizes the need for **Securing Remote Access** and **File Sharing Services** to protect against unauthorized access and potential cyber threats.</b>
  
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/SETmQBl.png)<br>
-<br />
+<br>
 
+![Windows RDP/SMB Auth Failures](https://i.imgur.com/SETmQBl.png)<br>
 <br />
 
 <br />
@@ -178,8 +179,8 @@ The visualization emphasizes the need for securing remote access and file sharin
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-- Start Time 2023-05-02 17:02:00 PM
-- Stop Time 2023-05-03 17:02:00 PM
+- Start Time: 2024-02-02 17:02:00 PM
+- Stop Time: 2024-02-03 17:02:00 PM
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -196,8 +197,8 @@ The following table shows the metrics we measured in our insecure environment fo
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-- Start Time 2023-03-18 15:37
-- Stop Time	2023-03-19 15:37
+- Start Time: 2024-02-18 15:37
+- Stop Time:	2024-02-19 15:37
 
 
 | Metric                   | Count
@@ -225,17 +226,28 @@ For effective management of high-priority incidents, I adhered to NIST 800-61 (R
 <br />
 <br />
  
-## Conclusion
-
-In this project, a small-scale honeynet was set up in Microsoft Azure, and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was utilized to generate alerts and incidents based on the processed logs. Furthermore, metrics were assessed in the initially insecure environment, both before and after the implementation of security controls. The substantial decrease in security events and incidents post the application of security measures underscores their efficacy in fortifying the environment.
-
-It's important to note that if the network's resources were heavily utilized by regular users, there could have been a likelihood of generating more security events and alerts in the 24-hour period following the implementation of security controls.
-
- <br />
  
 ## Conclusion
 
-In conclusion, I set up a compact, but effective honeynet using Microsoft Azure's robust cloud infrastructure. Microsoft Sentinel was then utilized to trigger alerts and generate incidents based on the logs ingested from the implemented watch lists. Baseline metrics were recorded in the unprotected environment before the implementation of any security controls. Following this, a range of security measures were enforced to fortify the network against potential threats. Upon implementation of these controls, another set of measurements was taken.
+🔹 In this project, a small-scale honeynet was set up in Microsoft Azure, and log sources were integrated into a Log Analytics workspace.
+  
+🔹 Microsoft Sentinel was utilized to generate alerts and incidents based on the processed logs.
+  
+🔹 Furthermore, metrics were assessed in the initially insecure environment, both before and after the implementation of security controls.
+  
+🔹 The substantial decrease in security events and incidents post the application of security measures underscores their efficacy in fortifying the environment.
+<br />
+<br />
 
-The comparison of pre- and post-implementation metrics demonstrated a significant reduction in security events and incidents, which highlights the effectiveness of the enforced security controls.
-It's important to mention that if the network's resources were extensively engaged by regular users, it's plausible that a higher number of security events and alerts could have been produced within the 24-hour timeframe post-security control implementation.
+It's important to note that if the network's resources were heavily utilized by regular users, there could have been a likelihood of generating more security events and alerts in the 24-hour period following the implementation of security controls.
+
+<br />
+<br />
+<br />
+<br />
+
+
+
+
+
+
