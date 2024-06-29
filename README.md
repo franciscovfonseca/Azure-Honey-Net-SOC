@@ -213,7 +213,12 @@ The following table shows the metrics we measured in our environment for another
 <br />
  
 ## Approach to Handling High-Priority Incidents with NIST Guidelines and Security Controls
-For effective management of high-priority incidents, I adhered to NIST 800-61 (Revision 2) guidelines and implemented security controls specified in NIST SP 800-53 (Revision 5). The approach involved:
+For effective management of high-priority incidents I:
+
+➡ **Adhered to NIST 800-61 (Revision 2) Guidelines**.<br />
+➡ **Implemented Security Controls specified in NIST SP 800-53 (Revision 5)**.
+
+The approach involved:
 
 - Initiating preparations by establishing a log analytics workspace, configuring Azure Sentinel, and setting up alerts for incident detection. The implementation of NIST SP 800-53 security controls ensured a robust and secure environment.
 
