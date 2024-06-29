@@ -135,7 +135,7 @@ This visualization underscores the importance of implementing proper security me
 
 <br>
 
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/JeElX9R.png)<br>
+![NSG Allowed Inbound Malicious Flows](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/7c4f1983-9ed3-454c-a1d4-01c0aad643ca)<br>
 
  <br />
  <h2></h2>
@@ -147,7 +147,7 @@ This serves as a reminder of the importance of securing Linux servers with **Str
 
 <br>
 
-![Linux Syslog Auth Failures](https://i.imgur.com/QW8PF0o.png)<br>
+![Linux Syslog Auth Failures](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/1b5d885c-abc0-4dd7-a207-6e813aaae077)<br>
 
  <br />
  <h2></h2>
@@ -159,7 +159,7 @@ The visualization emphasizes the need for **Securing Remote Access** and **File 
  
 <br>
 
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/SETmQBl.png)<br>
+![Windows RDP/SMB Auth Failures](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/c9077714-839b-4441-9c58-857b240f52f4)<br>
 <br />
 
 <br />
