@@ -1,5 +1,5 @@
 # ☁️🔐 Azure Honeynet & SOC: Cyber Attacks in Real Time 🔐☁️
-![Cloud Honeynet / SOC](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/c9efb972-1bf8-4c33-a8d4-510a792a27b6)
+![Cloud Honeynet / SOC](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/8b024f46-a74d-4b20-b9c6-59c4928fec68)
 
  <br />
  
