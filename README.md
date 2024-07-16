@@ -215,8 +215,8 @@ The following table shows the metrics we measured in our environment for another
 ## Approach to Handling High-Priority Incidents with NIST Guidelines and Security Controls
 For effective management of high-priority incidents I:
 
-➡ **Adhered to NIST 800-61 (Revision 2) Guidelines**.<br />
-➡ **Implemented Security Controls specified in NIST SP 800-53 (Revision 5)**.
+1. **Adhered to NIST 800-61 (Revision 2) Guidelines**.<br />
+2. **Implemented Security Controls specified in NIST SP 800-53 (Revision 5)**.
 
 The approach involved:
 
@@ -233,18 +233,28 @@ The approach involved:
  
  
 ## Conclusion
+<br />
 
-🔹 In this project, a small-scale honeynet was set up in Microsoft Azure, and log sources were integrated into a Log Analytics workspace.
+In this project, a small-scale honeynet was set up in Microsoft Azure, and log sources were integrated into a Log Analytics workspace.
   
-🔹 Microsoft Sentinel was utilized to generate alerts and incidents based on the processed logs.
+Microsoft Sentinel was utilized to generate alerts and incidents based on the processed logs.
   
-🔹 Furthermore, metrics were assessed in the initially insecure environment, both before and after the implementation of security controls.
+Furthermore, metrics were assessed in the initially insecure environment, both before and after the implementation of security controls.
   
-🔹 The substantial decrease in security events and incidents post the application of security measures underscores their efficacy in fortifying the environment.
+The substantial decrease in security events and incidents post the application of security measures underscores their efficacy in fortifying the environment.
 <br />
 <br />
+
+  <details close> 
+  
+**<summary> 💡 Note</summary>**
 
 It's important to note that if the network's resources were heavily utilized by regular users, there could have been a likelihood of generating more security events and alerts in the 24-hour period following the implementation of security controls.
+
+  </details>
+
+
+
 
 <br />
 <br />
