@@ -32,35 +32,35 @@ Overall, this project helped me to better understand the tactics and techniques 
 
 ## Methodology
 
-### ✔️ <b>Creating the Honeynet</b>:
+### 1️⃣ <b>Create the Honeynet</b>
 
-- I began by [Deploying Multiple Vulnerable Virtual Machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an insecure environment.
-
-<br>
-
-### ✔️ <b>Monitoring and Analysis</b>:
-
-- Azure was configured to ingest log sources from various resources into a log analytics workspace.
-- Microsoft Sentinel was then used to build attack maps, trigger alerts, and create incidents based on the collected data.
+- I began by [Deploying Multiple Vulnerable Virtual Machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an **Insecure Environment**.
 
 <br>
 
-### ✔️ <b>Security Metrics Measurement</b>:
+### 2️⃣ <b>Monitoring and Analysis</b>
 
-- I observed the environment for 24 hours, recording key security metrics while it was insecure.
-- This provided a baseline to compare against after implementing remediation measures.
-
-<br>
-
-### ✔️ <b>Incident Response and Remediation</b>:
-
-- After addressing the incidents and identifying vulnerabilities, I began the process of hardening the environment by applying security best practices and Azure-specific recommendations.
+- Azure was configured to ingest log sources from various resources into a **Log Analytics Workspace**.
+- **Microsoft Sentinel** was then used to build attack maps, trigger alerts, and create incidents based on the collected data.
 
 <br>
 
-### ✔️ <b>Post-Remediation Analysis</b>:
+### 3️⃣ <b>Security Metrics Measurement</b>
 
-- I re-observed the environment for another 24 hours to measure security metrics again, comparing the results with the initial baseline.
+- I observed the environment for 24 hours, recording **Key Security Metrics** while it was insecure.
+- This provided a baseline to compare against after **Implementing Remediation Measures**.
+
+<br>
+
+### 4️⃣ <b>Incident Response and Remediation</b>
+
+- After addressing the incidents and identifying vulnerabilities, I began the process of hardening the environment by applying **Security Best Practices and Azure-specific Recommendations**.
+
+<br>
+
+### 5️⃣ <b>Post-Remediation Analysis</b>
+
+- I re-observed the environment for another 24 hours to measure security metrics again, **Comparing the Results** with the initial baseline.
 
 <br>
 
@@ -123,17 +123,17 @@ Overall, this project helped me to better understand the tactics and techniques 
 
 <b>For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture. These improvements included:</b>
 
-<h4>1️⃣ Network Security Groups (NSGs)</h4>
+<h4> ❶ Network Security Groups (NSGs)</h4>
  
  - I hardened the NSGs by blocking all inbound and outbound traffic, with the sole exception of my own public IP address.
  - This ensured that only authorized traffic from a trusted source was allowed to access the virtual machines.
  
-<h4>2️⃣ Built-in Firewalls</h4>
+<h4> ❷ Built-in Firewalls</h4>
 
 - I configured the built-in firewalls on the virtual machines to restrict access and protect the resources from unauthorized connections.
 - This step involved fine-tuning the firewall rules based on the specific requirements of each VM, thereby minimizing the potential attack surface.
 
-<h4>3️⃣ Private Endpoints</h4>
+<h4> ❸ Private Endpoints</h4>
 
 - To enhance the security of other Azure resources, I replaced the public endpoints with Private Endpoints.
 - This ensured that access to sensitive resources, such as storage accounts and databases, was limited to the virtual network and not exposed to the public internet.
