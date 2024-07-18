@@ -82,12 +82,9 @@ Overall, this project helped me to better understand the tactics and techniques 
 - [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) for Security Controls
 - [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) for Incident Handling Guidance
 
- <br />
+<br>
 
-
-
-
-
+<br>
 
 ## Architecture BEFORE Implementing Hardening Measures and Security Controls
  <br />
