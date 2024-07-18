@@ -11,43 +11,62 @@
 
 In this project I built a honeynet in **Microsoft Azure** to simulate real-world cyber attacks.
 
-The main objective of this project was to showcase optimal security measures, effective incident response strategies, and the impact of fortifying our Azure environment. 
+The main objective of this project was to showcase:
+- optimal security measures
+- effective incident response strategies
+- the impact of fortifying our Azure environment
 
-This was achieved by [setting up virtual machines in Azure that were intentionally vulnerable](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md), lacking safeguards against the public internet.
+<br>
 
-This helped me to better understand the tactics and techniques used by cyber attackers, while also showcasing my ability to respond quickly and effectively to any identified issues.
+This was achieved by [Setting Up Virtual Machines in Azure which were Intentionally Vulnerable](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md), lacking safeguards against the public internet.
 
- <br />
+Subsequently, by incorporating log sources into a Log Analytics Workspace, I used Microsoft Sentinel to Generate Attack Maps, Trigger Alerts, and Create Incidents.
 
+<br>
 
- 
+Overall, this project helped me to better understand the tactics and techniques used by cyber attackers, while showcasing my ability to respond quickly and effectively to any identified issues.
+
+<br>
+
+<br>
+
 ## Methodology
 
-### 🟢 <b>*Creating the honeynet*</b>:
+### ✔️ <b>Creating the Honeynet</b>:
 
-- I began by [deploying multiple vulnerable virtual machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an insecure environment.
+- I began by [Deploying Multiple Vulnerable Virtual Machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an insecure environment.
 
-### 🟢 <b>*Monitoring and analysis*</b>:
+<br>
+
+### ✔️ <b>Monitoring and Analysis</b>:
 
 - Azure was configured to ingest log sources from various resources into a log analytics workspace.
 - Microsoft Sentinel was then used to build attack maps, trigger alerts, and create incidents based on the collected data.
 
-### 🟢 <b>*Security metrics measurement*</b>:
+<br>
+
+### ✔️ <b>Security Metrics Measurement</b>:
 
 - I observed the environment for 24 hours, recording key security metrics while it was insecure.
 - This provided a baseline to compare against after implementing remediation measures.
 
-### 🟢 <b>*Incident response and remediation*</b>:
+<br>
+
+### ✔️ <b>Incident Response and Remediation</b>:
 
 - After addressing the incidents and identifying vulnerabilities, I began the process of hardening the environment by applying security best practices and Azure-specific recommendations.
 
-### 🟢 <b>*Post-remediation analysis*</b>:
+<br>
+
+### ✔️ <b>Post-Remediation Analysis</b>:
 
 - I re-observed the environment for another 24 hours to measure security metrics again, comparing the results with the initial baseline.
 
- <br />
+<br>
 
-## Technologies, Regulations, and Azure Components Employed:
+<br>
+
+## Technologies, Regulations, and Azure Components Employed
 
 - Azure Virtual Network (VNet)
 - Azure Network Security Group (NSG)
