@@ -1,6 +1,9 @@
 <br />
  
 # ☁️🔐 Azure Honeynet & SOC: Cyber Attacks in Real Time 🔐☁️
+
+<br />
+
 <br />
 
 ![Cloud Honeynet / SOC](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/8b024f46-a74d-4b20-b9c6-59c4928fec68)
@@ -8,6 +11,8 @@
  <br />
  
 ## Introduction
+
+<br>
 
 In this project I built a honeynet in **Microsoft Azure** to simulate real-world cyber attacks.
 
@@ -22,8 +27,6 @@ This was achieved by [Setting Up Virtual Machines in Azure which were Intentiona
 
 Subsequently, by incorporating log sources into a Log Analytics Workspace, I used Microsoft Sentinel to Generate Attack Maps, Trigger Alerts, and Create Incidents.
 
-<br>
-
 Overall, this project helped me to better understand the tactics and techniques used by cyber attackers, while showcasing my ability to respond quickly and effectively to any identified issues.
 
 <br>
@@ -31,6 +34,8 @@ Overall, this project helped me to better understand the tactics and techniques 
 <br>
 
 ## Methodology
+
+<br>
 
 ### 1️⃣ <b>Create the Honeynet</b>
 
@@ -68,6 +73,8 @@ Overall, this project helped me to better understand the tactics and techniques 
 
 ## Technologies, Regulations, and Azure Components Employed
 
+<br>
+
 - Azure Virtual Network (VNet)
 - Azure Network Security Group (NSG)
 - Virtual Machines (2x Windows, 1x Linux)
@@ -87,14 +94,15 @@ Overall, this project helped me to better understand the tactics and techniques 
 <br>
 
 ## Architecture BEFORE Implementing Hardening Measures and Security Controls
- <br />
+
+<br>
  
 <p align="center">
 <img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/5cf1c278-756a-4bcb-a08f-271078a8bcba" height="70%" width="70%" alt="9"/><br />
 
  <br />
 
-<b>Before Hardening Measures and Security Controls:</b>
+### Before Hardening Measures and Security Controls:
 
 - In the "BEFORE" stage of the project, all resources were initially deployed with public exposure to the internet.
 
@@ -104,21 +112,27 @@ Overall, this project helped me to better understand the tactics and techniques 
 
 - Additionally, all other resources, such as **Storage Accounts** and **Databases**, were deployed with public endpoints visible to the internet, without utilizing any **Private Endpoints** for added security.
 
- <br />
- <br>
+<br>
+ 
+<br>
 
  
  
 
 ## Architecture AFTER Implementing Hardening Measures and Security Controls
- <br />
+
+<br>
  
 <p align="center">
 <img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/5789d984-10bc-4ada-8dc7-763722ad9b67" height="70%" width="70%" alt="9"/><br />
 
  <br />
 
-<b>For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture. These improvements included:</b>
+### For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture.
+
+<br>
+
+These improvements included:
 
 <h4> ❶ Network Security Groups (NSGs)</h4>
  
@@ -137,17 +151,19 @@ Overall, this project helped me to better understand the tactics and techniques 
 - As a result, these resources were protected from unauthorized access and potential attacks.
 <br />
 
+<br>
+
 <h3>✅ Result:</h3>
  
 - By comparing the **Security Metrics** *Before* and *After* implementing these **Hardening Measures** and **Security Controls**, I was able to demonstrate the effectiveness of each step in improving the overall **Security Posture** of the **Azure Environment**.
-<br />
 
-<br />
+<br>
 
-
+<br>
 
 ## Attack Maps BEFORE Hardening Measures and Security Controls
-<br />
+
+<br>
 
 This attack map demonstrates the consequences of leaving the **Network Security Group (NSG)** open, as it allowed for malicious traffic to flow unimpeded.
 
@@ -187,7 +203,7 @@ The visualization emphasizes the need for **Securing Remote Access** and **File 
 
 ## Attack Maps AFTER Hardening Measures and Security Controls
 
- <br />
+<br>
 
 ```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
 
@@ -198,9 +214,11 @@ The visualization emphasizes the need for **Securing Remote Access** and **File 
  
 ## Metrics Before Hardening / Security Controls
 
+<br>
+
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-- Start Time: 2024-02-02 17:02:00 PM
-- Stop Time: 2024-02-03 17:02:00 PM
+- Start Time: 2024-06-02 17:02:00 PM
+- Stop Time: 2024-06-03 17:02:00 PM
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -216,9 +234,11 @@ The following table shows the metrics we measured in our insecure environment fo
 
 ## Metrics After Hardening / Security Controls
 
+<br>
+
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-- Start Time: 2024-02-18 15:37
-- Stop Time:	2024-02-19 15:37
+- Start Time: 2024-06-18 15:37
+- Stop Time:	2024-06-19 15:37
 
 
 | Metric                   | Count
@@ -233,10 +253,15 @@ The following table shows the metrics we measured in our environment for another
 <br />
  
 ## Approach to Handling High-Priority Incidents with NIST Guidelines and Security Controls
+
+<br>
+
 For effective management of high-priority incidents I:
 
-1. **Adhered to NIST 800-61 (Revision 2) Guidelines**.<br />
-2. **Implemented Security Controls specified in NIST SP 800-53 (Revision 5)**.
+1. Adhered to **NIST 800-61 (Revision 2) Guidelines**.<br />
+2. Implemented Security Controls specified in **NIST SP 800-53 (Revision 5)**.
+
+<br>
 
 The approach involved:
 
@@ -253,11 +278,12 @@ The approach involved:
  
  
 ## Conclusion
-<br />
 
-In this project, a small-scale honeynet was set up in Microsoft Azure, and log sources were integrated into a Log Analytics workspace.
+<br>
+
+In this project, a small-scale honeynet was set up in **Microsoft Azure**, and log sources were integrated into a **Log Analytics Workspace**.
   
-Microsoft Sentinel was utilized to generate alerts and incidents based on the processed logs.
+**Microsoft Sentine**l was utilized to generate alerts and incidents based on the processed logs.
   
 Furthermore, metrics were assessed in the initially insecure environment, both before and after the implementation of security controls.
   
