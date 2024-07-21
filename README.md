@@ -23,9 +23,9 @@ The main objective of this project was to showcase:
 
 <br>
 
-This was achieved by [Setting Up Virtual Machines in Azure which were Intentionally Vulnerable](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md), lacking safeguards against the public internet.
+This was achieved by [Setting Up Virtual Machines in Azure](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) which were **Intentionally Vulnerable**, lacking safeguards against the public internet.
 
-Subsequently, by incorporating log sources into a Log Analytics Workspace, I used Microsoft Sentinel to Generate Attack Maps, Trigger Alerts, and Create Incidents.
+Subsequently, by incorporating log sources into a **Log Analytics Workspace**, I used **Microsoft Sentinel** to Generate Attack Maps, Trigger Alerts, and Create Incidents.
 
 Overall, this project helped me to better understand the tactics and techniques used by cyber attackers, while showcasing my ability to respond quickly and effectively to any identified issues.
 
@@ -39,13 +39,17 @@ Overall, this project helped me to better understand the tactics and techniques 
 
 ### 1️⃣ <b>Create the Honeynet</b>
 
-- I began by [Deploying Multiple Vulnerable Virtual Machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an **Insecure Environment**.
+- I began by [Deploying 2 Vulnerable Virtual Machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an **Insecure Environment**.
+
+- Then I [Disabled the Windows VM's Internal Firewall & Installed a SQL Server Database](https://github.com/franciscovfonseca/Disable-Windows-Firewall-Install-SQL-Server-and-Create-Vulnerabilities/blob/main/README.md) inside of it, in order to give bad actors a chance to **Discover our VMs** and **Generate Logs**.
+
 
 <br>
 
 ### 2️⃣ <b>Monitoring and Analysis</b>
 
 - Azure was configured to ingest log sources from various resources into a **Log Analytics Workspace**.
+
 - **Microsoft Sentinel** was then used to build attack maps, trigger alerts, and create incidents based on the collected data.
 
 <br>
@@ -53,6 +57,7 @@ Overall, this project helped me to better understand the tactics and techniques 
 ### 3️⃣ <b>Security Metrics Measurement</b>
 
 - I observed the environment for 24 hours, recording **Key Security Metrics** while it was insecure.
+
 - This provided a baseline to compare against after **Implementing Remediation Measures**.
 
 <br>
