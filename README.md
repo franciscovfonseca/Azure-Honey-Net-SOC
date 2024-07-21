@@ -6,7 +6,7 @@
 
 <br />
 
-![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/656e3ce2-9566-4a33-8992-2f300c2705ba)
+![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/ffd71b39-2eb9-49ad-8aac-405ab10003c6)
 
  <br />
  
