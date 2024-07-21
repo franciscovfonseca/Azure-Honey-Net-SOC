@@ -6,7 +6,7 @@
 
 <br />
 
-![Cloud Honeynet / SOC](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/8b024f46-a74d-4b20-b9c6-59c4928fec68)
+![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/6ff2eb2b-bfa9-413c-a6b4-260f2dd11e90)
 
  <br />
  
