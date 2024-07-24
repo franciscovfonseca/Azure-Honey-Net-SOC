@@ -1,6 +1,6 @@
 <br />
- 
-# ☁️🔐 Azure Honeynet & SOC: Cyber Attacks in Real Time 🔐☁️
+
+<h1 align="center">☁️🔐 Azure Honeynet & SOC: Cyber Attacks in Real Time 🔐☁️</h1> 
 
 <br />
 
