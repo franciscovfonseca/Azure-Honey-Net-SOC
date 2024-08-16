@@ -298,7 +298,7 @@ The substantial decrease in security events and incidents post the application o
   
 **<summary> 💡 Note</summary>**
 
-It's important to note that if the network's resources were heavily utilized by regular users, there could have been a likelihood of generating more security events and alerts in the 24-hour period following the implementation of security controls.
+It's important to note that if the network's resources were heavily utilized by regular users, there could have been a likelyhood of generating more security events and alerts in the 24-hour period following the implementation of security controls.
 
   </details>
 
