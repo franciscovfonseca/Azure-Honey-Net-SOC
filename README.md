@@ -42,8 +42,6 @@ Overall, this project helped me to better understand the tactics and techniques 
 
 - Finally I [Created a 3ʳᵈ Virtual Machine](https://github.com/franciscovfonseca/Disable-Windows-Firewall-Install-SQL-Server-and-Create-Vulnerabilities/blob/main/README.md) called ```attack-vm``` to Perform Actions against our Environment & Observe the Logs Generated from those Actions.
 
-<br>
-
   </details>
   
 <details close> 
@@ -61,8 +59,6 @@ Overall, this project helped me to better understand the tactics and techniques 
 
 - And then finally I worked on [Enabling Logging for our Azure Storage Account & Key Vault](https://github.com/franciscovfonseca/Data-Plane-Logs-Resource-Level/blob/main/README.md)
 
-<br>
-
   </details>
 
 <details close> 
@@ -71,8 +67,6 @@ Overall, this project helped me to better understand the tactics and techniques 
 - I observed the environment for 24 hours, recording **Key Security Metrics** while it was insecure.
 
 - This provided a baseline to compare against after **Implementing Remediation Measures**.
-
-<br>
 
   </details>
 
