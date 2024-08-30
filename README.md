@@ -14,15 +14,16 @@
 
 In this Project I built a Honeynet & SOC Environment in **Microsoft Azure**.
 
-I used **Log Analytics** to Ingest Logs from the various sources into our Environment, than leveraged **Microsoft Sentinel** to Build Attack Maps, Trigger Alerts & Create Incidents.
+I used **Log Analytics** to Ingest Logs from various sources into our Environment, than leveraged **Microsoft Sentinel** to Build Attack Maps, Trigger Alerts & Create Incidents.
 
 I also used **Microsoft Defender for Cloud** as a Data Source for the Log Analytics Workspace and to Assess the Virtual Machines' Configurations relative to **Regulatory Frameworks & Security Controls**.
 
-I configured Log Collection on the Insecure Environment, set Security Metrics and then observed the Environment for 24 hours.
+Following that, I configured Log Collection on the Insecure Environment, set Security Metrics and then observed the Environment for 24 hours.
 
 After Investigating the Incidents that Microsoft Sentinel generated during that period, I incorporated Security Controls to address the Incidents and Harden our Environment, based on recommendations from Microsoft Defender.
 
-After a second 24-hour Observation Period, these were the Metrics collected during the Post-Remediation Phase of the Project:
+<details close> 
+<summary> After a second 24-hour Observation Period, these were the Metrics collected during the Post-Remediation phase of the Project:</summary>
 
 - ```SecurityEven``` ➜ Windows Event Logs
 
@@ -34,7 +35,7 @@ After a second 24-hour Observation Period, these were the Metrics collected duri
 
 - ```AzureNetworkAnalytics_CL``` ➜  Malicious Flows allowed into our Honeynet
 
-
+  </details>
 
 <br>
 
@@ -101,7 +102,7 @@ After a second 24-hour Observation Period, these were the Metrics collected duri
 
 <br>
 
-## Technologies, Regulations, and Azure Components Employed
+## Technologies, Azure Components & Regulations Employed
 
 <br>
 
@@ -132,7 +133,8 @@ After a second 24-hour Observation Period, these were the Metrics collected duri
 
  <br />
 
-### Before Hardening Measures and Security Controls:
+<details close> 
+<summary> <h3> Before Hardening Measures & Security Controls:</h3> </summary>
 
 - In the "BEFORE" stage of the project, all resources were initially deployed with public exposure to the internet.
 
@@ -141,6 +143,8 @@ After a second 24-hour Observation Period, these were the Metrics collected duri
 - The Virtual Machines had both their **Network Security Groups (NSGs)** and built-in **Firewalls** wide open, allowing unrestricted access from any source.
 
 - Additionally, all other resources, such as **Storage Accounts** and **Databases**, were deployed with public endpoints visible to the internet, without utilizing any **Private Endpoints** for added security.
+
+  </details>
 
 <br>
  
@@ -158,28 +162,36 @@ After a second 24-hour Observation Period, these were the Metrics collected duri
 
  <br />
 
-### For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture.
+### ➡️ For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture.
 
 <br>
 
-These improvements included:
+#### These improvements included:
 
-<h4> ❶ Network Security Groups (NSGs)</h4>
+<details close> 
+<summary> <h4> ❶ Network Security Groups (NSGs)</h4> </summary>
  
  - I hardened the NSGs by blocking all inbound and outbound traffic, with the sole exception of my own public IP address.
  - This ensured that only authorized traffic from a trusted source was allowed to access the virtual machines.
- 
-<h4> ❷ Built-in Firewalls</h4>
+
+   </details>
+
+<details close> 
+<summary> <h4> ❷ Built-in Firewalls</h4> </summary>
 
 - I configured the built-in firewalls on the virtual machines to restrict access and protect the resources from unauthorized connections.
 - This step involved fine-tuning the firewall rules based on the specific requirements of each VM, thereby minimizing the potential attack surface.
 
-<h4> ❸ Private Endpoints</h4>
+   </details>
+
+<details close> 
+<summary> <h4> ❸ Private Endpoints</h4> </summary>
 
 - To enhance the security of other Azure resources, I replaced the public endpoints with Private Endpoints.
 - This ensured that access to sensitive resources, such as storage accounts and databases, was limited to the virtual network and not exposed to the public internet.
 - As a result, these resources were protected from unauthorized access and potential attacks.
-<br />
+
+   </details>
 
 <br>
 
