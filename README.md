@@ -12,20 +12,29 @@
 
 <br>
 
-In this project I built a honeynet in **Microsoft Azure** to simulate real-world cyber attacks.
+In this Project I built a Honeynet & SOC Environment in **Microsoft Azure**.
 
-The main objective of this project was to showcase:
-- optimal security measures
-- effective incident response strategies
-- the impact of fortifying our Azure environment
+I used **Log Analytics** to Ingest Logs from the various sources into our Environment, than leveraged **Microsoft Sentinel** to **Build Attack Maps**, **Trigger Alerts** & **Create Incidents**.
 
-<br>
+I also used **Microsoft Defender for Cloud** as a Data Source for the Log Analytics Workspace and to Assess the Virtual Machines' Configurations relative to **Regulatory Frameworks & Security Controls**.
 
-This was achieved by [Setting Up Virtual Machines in Azure](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) which were **Intentionally Vulnerable**, lacking safeguards against the public internet.
+I configured Log Collection on the Insecure Environment, set Security Metrics and then observed the Environment for 24 hours.
 
-Subsequently, by incorporating log sources into a **Log Analytics Workspace**, I used **Microsoft Sentinel** to Generate Attack Maps, Trigger Alerts, and Create Incidents.
+After Investigating the Incidents that Microsoft Sentinel generated during that period, I incorporated Security Controls to address the Incidents and Harden our Environment, based on recommendations from Microsoft Defender.
 
-Overall, this project helped me to better understand the tactics and techniques used by cyber attackers, while showcasing my ability to respond quickly and effectively to any identified issues.
+After a second 24-hour Observation Period, these were the Metrics collected during the Post-Remediation Phase of the Project:
+
+- ```SecurityEven``` ➜ Windows Event Logs
+
+- ```Syslog``` ➜ Linux Event Logs
+
+- ```SecurityAlert``` ➜ Log Analytics Alerts Triggered
+
+- ```SecurityIncident``` ➜ Incidents created by Sentinel
+
+- ```AzureNetworkAnalytics_CL``` ➜  Malicious Flows allowed into our Honeynet
+
+
 
 <br>
 
@@ -64,22 +73,30 @@ Overall, this project helped me to better understand the tactics and techniques 
 <details close> 
 <summary> <h3> 3️⃣ Security Metrics Measurement</h3> </summary>
 
-- I observed the environment for 24 hours, recording **Key Security Metrics** while it was insecure.
+- [Configure Microsoft Sentinel (SIEM)](https://github.com/franciscovfonseca/Microsoft-Sentinel-Configuration/blob/main/README.md) in order to Create 4 different Attack Maps ➜ which highlight where people from around the World are performing Malicious Actions to our Environment.
+
+- [Expose our Insecure Environment to Malicious Traffic for 24 hours & Capture Analytics](https://github.com/franciscovfonseca/Run-Insecure-Environment-for-24-Hours-and-Capture-Analytics/blob/main/README.md) by taking a Snapshot of Multiple Security Logs & Key  Metrics recorded.
 
 - This provided a baseline to compare against after **Implementing Remediation Measures**.
 
   </details>
 
-### 4️⃣ <b>Incident Response and Remediation</b>
+<details close> 
+<summary> <h3> 4️⃣ Incident Response & Remediation</h3> </summary>
 
-- After addressing the incidents and identifying vulnerabilities, I began the process of hardening the environment by applying **Security Best Practices and Azure-specific Recommendations**.
+- [Investigate & Work the Incidents](https://github.com/franciscovfonseca/Working-Incidents-and-Incident-Response/blob/main/README.md) being generated within Microsoft Sentinel ➜ in accordance with the **NIST 800-61 Incident Management Lifecycle**.
 
-<br>
+- After Addressing the Incidents & Identifying Vulnerabilities ➜ Harden the Environment by applying **Security Best Practices and Azure-specific Recommendations**.
 
-### 5️⃣ <b>Post-Remediation Analysis</b>
+  </details>
 
-- I re-observed the environment for another 24 hours to measure security metrics again, **Comparing the Results** with the initial baseline.
+<details close> 
+<summary> <h3> 5️⃣ Post-Remediation Analysis</h3> </summary>
 
+- The Environment was Observed again for another 24 hours to Measure Security Metrics again ➜ **Comparing the Results** with the initial baseline.
+
+  </details>
+  
 <br>
 
 <br>
@@ -88,17 +105,17 @@ Overall, this project helped me to better understand the tactics and techniques 
 
 <br>
 
-- Azure Virtual Network (VNet)
-- Azure Network Security Group (NSG)
-- Virtual Machines (2x Windows, 1x Linux)
-- Log Analytics Workspace with Kusto Query Language (KQL) Queries
-- Azure Key Vault for Secure Secrets Management
-- Azure Storage Account for Data Storage
-- Microsoft Sentinel for Security Information and Event Management (SIEM)
-- Microsoft Defender for Cloud to Protect Cloud Resources
-- Windows Remote Desktop for Remote Access
-- Command Line Interface (CLI) for System Management
-- PowerShell for Automation and Configuration Management
+- **Azure Virtual Network** (VNet)
+- **Azure Network Security Groups** (NSGs)
+- **Virtual Machines** (2x Windows, 1x Linux)
+- **Log Analytics Workspace** with **Kusto Query Language** (KQL) Queries
+- **Azure Key Vault** for Secure Secrets Management
+- **Azure Storage Account** for Data Storage
+- **Microsoft Sentinel** for Security Information and Event Management (SIEM)
+- **Microsoft Defender for Cloud** to Protect Cloud Resources
+- **Windows Remote Desktop** for Remote Access
+- **Command Line Interface** (CLI) for System Management
+- **PowerShell** for Automation and Configuration Management
 - [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) for Security Controls
 - [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) for Incident Handling Guidance
 
@@ -106,7 +123,7 @@ Overall, this project helped me to better understand the tactics and techniques 
 
 <br>
 
-## Architecture BEFORE Implementing Hardening Measures and Security Controls
+## Architecture BEFORE Implementing Hardening Measures & Security Controls
 
 <br>
  
