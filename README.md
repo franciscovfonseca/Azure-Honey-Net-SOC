@@ -209,6 +209,8 @@ By comparing the **Security Metrics** *BEFORE* and *AFTER* implementing these **
 
 ## Attack Maps BEFORE Hardening Measures and Security Controls
 
+<br>
+
 ### ➡️ NSG Allowed Malicious Inbound Flows
 
 This attack map demonstrates the consequences of leaving the **Network Security Group (NSG)** open, as it allowed for Malicious Traffic to flow unimpeded.
@@ -222,6 +224,8 @@ This visualization underscores the importance of implementing proper Security Me
 <br>
 
 <h2></h2>
+
+<br>
 
 ### ➡️ Linux SSH Authentication Failures
  
@@ -237,6 +241,8 @@ This serves as a reminder of the importance of securing Linux servers with **Str
 
 <h2></h2>
 
+<br>
+
 ### ➡️ Windows RDP/SMB Authentication Failures
  
 This Attack Map showcases numerous **RDP and SMB Failures**, illustrating the persistent attempts by potential attackers to exploit these protocols.
@@ -250,6 +256,8 @@ The visualization emphasizes the need for **Securing Remote Access** and **File 
 <br>
 
 <h2></h2>
+
+<br>
 
 ### ➡️ MS SQL Server Authentication Failures
  
