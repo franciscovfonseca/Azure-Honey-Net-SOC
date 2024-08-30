@@ -36,28 +36,28 @@ Overall, this project helped me to better understand the tactics and techniques 
 <details close> 
 <summary> <h3> 1️⃣ Create the Honeynet</h3> </summary>
 
-- I began by [Deploying 2 Vulnerable Virtual Machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an Insecure Environment.
+- [Deploy 2 Vulnerable Virtual Machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an Insecure Environment.
 
-- I then [Disabled the Windows VM's Internal Firewall & Installed a SQL Server Database](https://github.com/franciscovfonseca/Disable-Windows-Firewall-Install-SQL-Server-and-Create-Vulnerabilities/blob/main/README.md) inside of it, in order to give bad actors a chance to Discover our VMs and Generate Logs.
+- [Disable the Windows VM's Internal Firewall & Installed a SQL Server Database](https://github.com/franciscovfonseca/Disable-Windows-Firewall-Install-SQL-Server-and-Create-Vulnerabilities/blob/main/README.md) inside of it, in order to give bad actors a chance to Discover our VMs and Generate Logs.
 
-- Finally I [Created a 3ʳᵈ Virtual Machine](https://github.com/franciscovfonseca/Disable-Windows-Firewall-Install-SQL-Server-and-Create-Vulnerabilities/blob/main/README.md) called ```attack-vm``` to Perform Actions against our Environment & Observe the Logs Generated from those Actions.
+- [Create a 3ʳᵈ Virtual Machine](https://github.com/franciscovfonseca/Disable-Windows-Firewall-Install-SQL-Server-and-Create-Vulnerabilities/blob/main/README.md) called ```attack-vm``` to Perform Actions against our Environment & Observe the Logs Generated from those Actions.
 
   </details>
   
 <details close> 
 <summary> <h3> 2️⃣ Logging & Monitoring</h3> </summary>
 
-- I started by [Setting up Log Analytics Workspace](https://github.com/franciscovfonseca/Geo-IP-Data-Ingestion-and-Log-Analytics-and-Microsoft-Sentinel-SIEM-Setup/blob/main/README.md) as our Central Log Repository.
+- [Set up Log Analytics Workspace](https://github.com/franciscovfonseca/Geo-IP-Data-Ingestion-and-Log-Analytics-and-Microsoft-Sentinel-SIEM-Setup/blob/main/README.md) as our Central Log Repository.
 
-- I then [Enabled Microsoft Defender for Cloud](https://github.com/franciscovfonseca/Enable-Microsoft-Defender-for-Cloud/blob/main/README.md) to gives us a highlevel view of our Azure Environment in terms of Security and Secure Score.
+- [Enable Microsoft Defender for Cloud](https://github.com/franciscovfonseca/Enable-Microsoft-Defender-for-Cloud/blob/main/README.md) to gives us a highlevel view of our Azure Environment in terms of Security and Secure Score.
 
-- After that I [Configured the Logs from the Virtual Machines & NSGs](https://github.com/franciscovfonseca/Enable-Log-Collection-for-VMs-and-NSGs/edit/main/README.md) to be sent into our Log Analytics Workspace.
+- [Configure the Logs from the Virtual Machines & NSGs](https://github.com/franciscovfonseca/Enable-Log-Collection-for-VMs-and-NSGs/edit/main/README.md) to be sent into our Log Analytics Workspace.
 
-- The next step was to [Ingest the Logs from Microsoft Entra ID](https://github.com/franciscovfonseca/Microsoft-Entra-ID-Logging/blob/main/README.md) into our Log Analytics Workspace.
+- [Ingest the Logs from Microsoft Entra ID](https://github.com/franciscovfonseca/Microsoft-Entra-ID-Logging/blob/main/README.md) into our Log Analytics Workspace.
 
-- In the next lab I continued Configuring Logging, in this case by [Bringing the Activity Logs](https://github.com/franciscovfonseca/Activity-Log-Subscription-Level/blob/main/README.md) into our LAW.
+- [Configure Logging by Bringing the Activity Logs](https://github.com/franciscovfonseca/Activity-Log-Subscription-Level/blob/main/README.md) into our LAW.
 
-- And then finally I worked on [Enabling Logging for our Azure Storage Account & Key Vault](https://github.com/franciscovfonseca/Data-Plane-Logs-Resource-Level/blob/main/README.md)
+- [Enable Logging for our Azure Storage Account & Key Vault](https://github.com/franciscovfonseca/Data-Plane-Logs-Resource-Level/blob/main/README.md)
 
   </details>
 
