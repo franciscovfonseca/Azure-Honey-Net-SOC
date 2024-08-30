@@ -1,12 +1,10 @@
 <br />
 
-<h1 align="center">☁️🔐 Azure Honeynet & SOC: Cyber Attacks in Real Time 🔐☁️</h1> 
+<h1 align="center">☁️🔐 Building a SOC & Honeynet in Azure with Live Traffic 🔐☁️</h1> 
 
 <br />
 
 ![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/ff20f83b-0270-445d-8fda-b7f235235de3)
-
- <br />
  
 ## Introduction
 
@@ -16,14 +14,14 @@ In this Project I built a Honeynet & SOC Environment in **Microsoft Azure**.
 
 I used **Log Analytics** to Ingest Logs from various sources into our Environment, than leveraged **Microsoft Sentinel** to Build Attack Maps, Trigger Alerts & Create Incidents.
 
-I also used **Microsoft Defender for Cloud** as a Data Source for the Log Analytics Workspace and to Assess the Virtual Machines' Configurations relative to **Regulatory Frameworks & Security Controls**.
+I also Enabled **Microsoft Defender for Cloud** as a Data Source for the Log Analytics Workspace and to assess the Virtual Machines' Configurations relative to *Regulatory Frameworks & Security Controls*.
 
 Following that, I configured Log Collection on the Insecure Environment, set Security Metrics and then observed the Environment for 24 hours.
 
-After Investigating the Incidents that Microsoft Sentinel generated during that period, I incorporated Security Controls to address the Incidents and Harden our Environment, based on recommendations from Microsoft Defender.
+After Investigating the Incidents that Microsoft Sentinel generated during that period, I incorporated Security Controls to address the Incidents and Harden our Environment, based on recommendations from **Microsoft Defender (*NIST 800-53*)**.
 
 <details close> 
-<summary> After a second 24-hour Observation Period, these were the Metrics collected during the Post-Remediation phase of the Project:</summary>
+<summary> For the Post-Remediation phase of this Project and after a second 24-hour Observation Period, these were the Metrics collected:</summary>
 
 - ```SecurityEven``` ➜ Windows Event Logs
 
@@ -124,7 +122,7 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
 
 <br>
 
-## Architecture BEFORE Implementing Hardening Measures & Security Controls
+## Architecture *BEFORE* Implementing Hardening Measures & Security Controls
 
 <br>
  
@@ -134,15 +132,15 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
  <br />
 
 <details close> 
-<summary> <h3> Before Hardening Measures & Security Controls:</h3> </summary>
+<summary> <h3> 🚫 BEFORE Hardening Measures & Security Controls:</h3> </summary>
 
-- In the "BEFORE" stage of the project, all resources were initially deployed with public exposure to the internet.
+- In the *BEFORE* stage of this Project ➜ all resources were initially deployed with Public Exposure to the Internet.
 
-- This setup was intentionally insecure to attract potential cyber attackers and observe their tactics.
+- This setup was Intentionally Insecure to Attract Potential Cyber Attackers and Observe their Tactics.
  
-- The Virtual Machines had both their **Network Security Groups (NSGs)** and built-in **Firewalls** wide open, allowing unrestricted access from any source.
+- The Virtual Machines had both their **Network Security Groups (NSGs)** and built-in **Firewalls** wide open, allowing Unrestricted Access from any source.
 
-- Additionally, all other resources, such as **Storage Accounts** and **Databases**, were deployed with public endpoints visible to the internet, without utilizing any **Private Endpoints** for added security.
+- Additionally, all other resources, such as **Storage Account**, **Key Vault** and **Databases**, were deployed with Public Endpoints visible to the internet, without utilizing any **Private Endpoints** for Added Security.
 
   </details>
 
@@ -150,23 +148,25 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
  
 <br>
 
- 
- 
-
-## Architecture AFTER Implementing Hardening Measures and Security Controls
+## Architecture *AFTER* Implementing Hardening Measures and Security Controls
 
 <br>
  
 <p align="center">
 <img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/5789d984-10bc-4ada-8dc7-763722ad9b67" height="70%" width="70%" alt="9"/><br />
 
- <br />
+<br>
 
-### ➡️ For the "AFTER" stage, I implemented a series of hardening measures and security controls to improve the environment's overall security posture.
+<details close> 
+<summary> <h3> 🔒 AFTER Hardening Measures & Security Controls:</h3> </summary>
 
 <br>
 
-#### These improvements included:
+For the *AFTER* stage of this Project ➜ I implemented a series of **Hardening Measures & Security Control**s.
+
+Th goal was to Improve the Environment's Overall **Security Posture**.
+
+These improvements included:
 
 <details close> 
 <summary> <h4> ❶ Network Security Groups (NSGs)</h4> </summary>
@@ -193,11 +193,15 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
 
    </details>
 
+  </details>
+
 <br>
 
-<h3>✅ Result:</h3>
+<h3>📈 Result:</h3>
  
-- By comparing the **Security Metrics** *Before* and *After* implementing these **Hardening Measures** and **Security Controls**, I was able to demonstrate the effectiveness of each step in improving the overall **Security Posture** of the **Azure Environment**.
+By comparing the **Security Metrics** *BEFORE* and *AFTER* implementing these **Hardening Measures** & **Security Controls**:
+
+✅ I was able to demonstrate the Effectiveness of each step in improving the overall **Security Posture** of the **Azure Environment**.
 
 <br>
 
@@ -205,19 +209,21 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
 
 ## Attack Maps BEFORE Hardening Measures and Security Controls
 
-<br>
+### ➡️ NSG Allowed Malicious Inbound Flows
 
-This attack map demonstrates the consequences of leaving the **Network Security Group (NSG)** open, as it allowed for malicious traffic to flow unimpeded.
+This attack map demonstrates the consequences of leaving the **Network Security Group (NSG)** open, as it allowed for Malicious Traffic to flow unimpeded.
 
-This visualization underscores the importance of implementing proper security measures, such as **Restricting NSG Rules**, to Prevent Unauthorized Access and Minimize Potential Threats.
+This visualization underscores the importance of implementing proper Security Measures, such as **Restricting NSG Rules**, to Prevent Unauthorized Access and Minimize Potential Threats.
 
 <br>
 
 ![NSG Allowed Inbound Malicious Flows](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/49108ae2-03f1-4e14-ab9c-0d634631d949)<br>
 
- <br />
- <h2></h2>
- <br />
+<br>
+
+<h2></h2>
+
+### ➡️ Linux SSH Authentication Failures
  
 This attack map highlights the numerous **Syslog Authentication Failures** experienced by the **Linux Server** I deployed, indicating that unauthorized access attempts were made from outisde.
 
@@ -227,21 +233,35 @@ This serves as a reminder of the importance of securing Linux servers with **Str
 
 ![Linux Syslog Auth Failures](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/71ba5813-06ac-43a4-942b-997d10f839a5)<br>
 
- <br />
- <h2></h2>
- <br />
+<br>
+
+<h2></h2>
+
+### ➡️ Windows RDP/SMB Authentication Failures
  
-This attack map showcases numerous **RDP and SMB Failures**, illustrating the persistent attempts by potential attackers to exploit these protocols.
+This Attack Map showcases numerous **RDP and SMB Failures**, illustrating the persistent attempts by potential attackers to exploit these protocols.
 
 The visualization emphasizes the need for **Securing Remote Access** and **File Sharing Services** to protect against unauthorized access and potential cyber threats.</b>
  
 <br>
 
 ![Windows RDP/SMB Auth Failures](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/7646c9c6-a01d-4905-ad87-97f8afaf202f)<br>
-<br />
 
-<br />
+<br>
 
+<h2></h2>
+
+### ➡️ MS SQL Server Authentication Failures
+ 
+The Attack Map displayed below provides a Snapshot of **Attack Attempts** aimed at a Publicly **Exposed Microsoft SQL Server** over a 24-hour period.
+
+The Map Highlights the Exact Location from which these **Attacks or Login Attempts** originated ➜ Australia
+
+<br>
+
+![Windows RDP/SMB Auth Failures](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/7646c9c6-a01d-4905-ad87-97f8afaf202f)<br>
+
+<br>
 
 ## Attack Maps AFTER Hardening Measures and Security Controls
 
