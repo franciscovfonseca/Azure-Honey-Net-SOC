@@ -1,6 +1,6 @@
 <br />
 
-<h1 align="center">☁️🔐 Building a SOC & Honeynet in Azure with Live Traffic 🔐☁️</h1> 
+<h1 align="center">☁️🔐 Building a SOC & Honeynet in Azure (Live Traffic) 🔐☁️</h1> 
 
 <br />
 
@@ -148,7 +148,7 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
  
 <br>
 
-## Architecture *AFTER* Implementing Hardening Measures and Security Controls
+## Architecture *AFTER* Implementing Hardening Measures & Security Controls
 
 <br>
  
@@ -195,11 +195,13 @@ These improvements included:
 
   </details>
 
+<h2></h2>
+
 <br>
 
-<h3>📈 Result:</h3>
+<h3>Result:</h3>
  
-By comparing the **Security Metrics** *BEFORE* and *AFTER* implementing these **Hardening Measures** & **Security Controls**:
+By comparing the **Security Metrics** *BEFORE* and *AFTER* implementing these **Hardening Measures & Security Controls**:
 
 ✅ I was able to demonstrate the Effectiveness of each step in improving the overall **Security Posture** of the **Azure Environment**.
 
@@ -207,11 +209,11 @@ By comparing the **Security Metrics** *BEFORE* and *AFTER* implementing these **
 
 <br>
 
-## Attack Maps BEFORE Hardening Measures and Security Controls
+## Attack Maps *BEFORE* Hardening Measures & Security Controls
 
 <br>
 
-### ➡️ NSG Allowed Malicious Inbound Flows
+### 🌍 NSG Allowed Malicious Inbound Flows
 
 This attack map demonstrates the consequences of leaving the **Network Security Group (NSG)** open, as it allowed for Malicious Traffic to flow unimpeded.
 
@@ -227,7 +229,7 @@ This visualization underscores the importance of implementing proper Security Me
 
 <br>
 
-### ➡️ Linux SSH Authentication Failures
+### 🌍 Linux SSH Authentication Failures
  
 This attack map highlights the numerous **Syslog Authentication Failures** experienced by the **Linux Server** I deployed, indicating that unauthorized access attempts were made from outisde.
 
@@ -243,7 +245,7 @@ This serves as a reminder of the importance of securing Linux servers with **Str
 
 <br>
 
-### ➡️ Windows RDP/SMB Authentication Failures
+### 🌍 Windows RDP/SMB Authentication Failures
  
 This Attack Map showcases numerous **RDP and SMB Failures**, illustrating the persistent attempts by potential attackers to exploit these protocols.
 
@@ -259,7 +261,7 @@ The visualization emphasizes the need for **Securing Remote Access** and **File 
 
 <br>
 
-### ➡️ MS SQL Server Authentication Failures
+### 🌍 MS SQL Server Authentication Failures
  
 The Attack Map displayed below provides a Snapshot of **Attack Attempts** aimed at a Publicly **Exposed Microsoft SQL Server** over a 24-hour period.
 
@@ -271,45 +273,39 @@ The Map Highlights the Exact Location from which these **Attacks or Login Attemp
 
 <br>
 
-## Attack Maps AFTER Hardening Measures and Security Controls
+## Attack Maps *AFTER* Hardening Measures & Security Controls
 
 <br>
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+✅ ```All Map Queries actually returned No Results due to No Instances of Malicious Activitis for the 24 hour period after Hardening.```
 
-<br />
-<br />
-<br />
+<br>
 
+<br>
  
-## Metrics Before Hardening / Security Controls
+## Metrics *BEFORE* Hardening Measures & Security Controls
 
 <br>
 
-The following table shows the metrics we measured in our insecure environment for 24 hours:
-- Start Time: 2024-06-02 17:02:00 PM
-- Stop Time: 2024-06-03 17:02:00 PM
+The following table shows the Metrics we measured in our **Insecure Environment** for 24 hours:
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent (Windows VM)            | 21182
-| Syslog (Linux VM)                   | 4877
-| SecurityAlert (Microsoft Defender for Cloud            | 0
-| SecurityIncident (Sentinel Incidents)        | 343
-| NSG Inbound Malicious Flows Allowed | 969
+| SecurityEvent (Windows VM)            | 19470
+| Syslog (Linux VM)                   | 3028
+| SecurityAlert (Microsoft Defender for Cloud            | 10
+| SecurityIncident (Sentinel Incidents)        | 348
+| NSG Inbound Malicious Flows Allowed | 843
 
 <br />
 <br />
 
 
-## Metrics After Hardening / Security Controls
+## Metrics *AFTER* Hardening / Security Controls
 
 <br>
 
-The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-- Start Time: 2024-06-18 15:37
-- Stop Time:	2024-06-19 15:37
-
+The following table shows the Metrics we measured in our Environment for another 24 hours, but *AFTER* I applied **Security Controls**:
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -321,43 +317,72 @@ The following table shows the metrics we measured in our environment for another
 
 <br />
 <br />
- 
-## Approach to Handling High-Priority Incidents with NIST Guidelines and Security Controls
+
+<details close> 
+<summary> <h3> 🎯 Approach to Handling High-Priority Incidents with NIST Guidelines & Security Controls</h3> </summary>
 
 <br>
 
-For effective management of high-priority incidents I:
+For Effective Management of High-Priority Incidents I made the decidion to:
 
-1. Adhered to **NIST 800-61 (Revision 2) Guidelines**.<br />
-2. Implemented Security Controls specified in **NIST SP 800-53 (Revision 5)**.
+1. Adhere to **NIST 800-61 (Revision 2)** Guidelines.
+2. Implement Security Controls specified in **NIST SP 800-53 (Revision 5)**.
 
 <br>
 
-The approach involved:
+Thi Approach involved:
 
-- Initiating preparations by establishing a log analytics workspace, configuring Azure Sentinel, and setting up alerts for incident detection. The implementation of NIST SP 800-53 security controls ensured a robust and secure environment.
-
-- When incidents occurred, I categorized and assessed their severity, conducting thorough investigations into logs to distinguish false from true positives. The incident response procedures outlined in NIST 800-61 (Revision 2) guided this process, evaluating the scope of impact.
+<details close> 
+<summary> <h4> Step 1️⃣</h4> </summary>
  
-- To streamline incident response, I employed an incident response playbook aligned with NIST 800-61 (Revision 2), documenting incident details comprehensively. Relevant security controls from NIST SP 800-53 (Revision 5) guided the execution of incident response activities.
-  
-- Post-resolution, meticulous documentation of findings, steps taken, and analyses performed was undertaken for each incident. Closure involved indicating the resolution and any necessary follow-up actions while ensuring compliance with NIST SP 800-53 (Revision 5) security controls.
+ - Initiating preparations by establishing a log analytics workspace, configuring Azure Sentinel, and setting up alerts for incident detection.
+ - The implementation of NIST SP 800-53 security controls ensured a robust and secure environment.
 
-<br />
-<br />
+</details>
+
+<details close> 
+<summary> <h4> Step 2️⃣</h4> </summary>
  
+- When incidents occurred, I categorized and assessed their severity, conducting thorough investigations into logs to distinguish false from true positives.
+- The incident response procedures outlined in NIST 800-61 (Revision 2) guided this process, evaluating the scope of impact.
+
+</details>
+
+<details close> 
+<summary> <h4> Step 3️⃣</h4> </summary>
+ 
+ - To streamline incident response, I employed an incident response playbook aligned with NIST 800-61 (Revision 2), documenting incident details comprehensively.
+ - Relevant security controls from NIST SP 800-53 (Revision 5) guided the execution of incident response activities.
+
+</details>
+
+<details close> 
+<summary> <h4> Step 4️⃣</h4> </summary>
+ 
+ - Post-resolution, meticulous documentation of findings, steps taken, and analyses performed was undertaken for each incident.
+ - Closure involved indicating the resolution and any necessary follow-up actions while ensuring compliance with NIST SP 800-53 (Revision 5) security controls.
+
+</details>
+
+   </details>
+
+<br>
+
+<br>
+
+<br>
  
 ## Conclusion
 
 <br>
 
-In this project, a small-scale honeynet was set up in **Microsoft Azure**, and log sources were integrated into a **Log Analytics Workspace**.
+In this project, I set up a Honeynet and SOC Environment in **Microsoft Azure**, and integrated several Log Sources into a **Log Analytics Workspace**.
   
-**Microsoft Sentine**l was utilized to generate alerts and incidents based on the processed logs.
+I used **Microsoft Sentinel** to Generate Alerts and Incidents based on the ingested Logs.
   
-Furthermore, metrics were assessed in the initially insecure environment, both before and after the implementation of security controls.
+Furthermore, I assessed the Security Metrics in a initially Insecure Environment, *BEFORE* Implementing of Security Controls, and then *AFTER* doing so.
   
-The substantial decrease in security events and incidents post the application of security measures underscores their efficacy in fortifying the environment.
+The Substantial Decrease in Security Events and Incidents Post-Implementation of **Security Measures** showcases how important they were in **Fortifying our Cloud Environment**.
 <br />
 <br />
 
