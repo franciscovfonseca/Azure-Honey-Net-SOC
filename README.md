@@ -4,7 +4,7 @@
 
 <br />
 
-![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/ff20f83b-0270-445d-8fda-b7f235235de3)
+![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/b6f385a6-3b8f-4eb2-a3f4-759adb34e7fc)
  
 ## Introduction
 
