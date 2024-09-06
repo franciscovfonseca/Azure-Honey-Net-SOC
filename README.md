@@ -323,44 +323,45 @@ The following table shows the Metrics we measured in our Environment for another
 
 <br>
 
-For Effective Management of High-Priority Incidents I made the decidion to:
+For Effective Management of High-Priority Incidents:
 
-1. Adhere to **NIST 800-61 (Revision 2)** Guidelines.
-2. Implement Security Controls specified in **NIST SP 800-53 (Revision 5)**.
+1. I adhered to [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) Guidelines.
+2. Implemented Security Controls specified in [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final).
 
 <br>
 
-Thi Approach involved:
+**This Approach involved**:
 
 <details close> 
 <summary> <h4> Step 1️⃣</h4> </summary>
  
- - Initiating preparations by establishing a log analytics workspace, configuring Azure Sentinel, and setting up alerts for incident detection.
- - The implementation of NIST SP 800-53 security controls ensured a robust and secure environment.
+ - Initial Preparation ➜ Configuring a Log Analytics Workspace & Microsoft Sentinel.
+ - Setting up Alerts for Incident Detection.
+ - Implement NIST SP 800-53 Security Controls to ensure a Robust and Secure Environment.
 
 </details>
 
 <details close> 
 <summary> <h4> Step 2️⃣</h4> </summary>
  
-- When incidents occurred, I categorized and assessed their severity, conducting thorough investigations into logs to distinguish false from true positives.
-- The incident response procedures outlined in NIST 800-61 (Revision 2) guided this process, evaluating the scope of impact.
+- When Incidents occurred, I Categorized and Assessed their Severity ➜ thoroughly investigating the different Logs to determine if the Incidents were False or True positives.
+- My Incident Response Process was based on the NIST 800-61 guidelines.
 
 </details>
 
 <details close> 
 <summary> <h4> Step 3️⃣</h4> </summary>
  
- - To streamline incident response, I employed an incident response playbook aligned with NIST 800-61 (Revision 2), documenting incident details comprehensively.
- - Relevant security controls from NIST SP 800-53 (Revision 5) guided the execution of incident response activities.
+ - I also employed an Incident Response Playbook aligned with NIST 800-61 ➜ to document each Incident's details in a very comprehensive way.
+ - The necessary Incident Response Activities were based on the Security Controls from NIST SP 800-53.
 
 </details>
 
 <details close> 
 <summary> <h4> Step 4️⃣</h4> </summary>
  
- - Post-resolution, meticulous documentation of findings, steps taken, and analyses performed was undertaken for each incident.
- - Closure involved indicating the resolution and any necessary follow-up actions while ensuring compliance with NIST SP 800-53 (Revision 5) security controls.
+ - For each Incident I documented all the post-resolution activities performed, what were the findings, the steps taken, and what my analyses was.
+ - I Closed the Incident after highlighting what the resolution was and if there was any necessary follow-up actions required ➜ while ensuring Compliance with NIST SP 800-53 Security Controls.
 
 </details>
 
