@@ -309,8 +309,8 @@ The following table shows the Metrics we measured in our Environment for another
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent (Windows VM)            | 783
-| Syslog (Linux VM)                   | 23
+| SecurityEvent (Windows VM)            | 8778
+| Syslog (Linux VM)                   | 25
 | SecurityAlert (Microsoft Defender for Cloud            | 0
 | SecurityIncident (Sentinel Incidents)        | 0
 | NSG Inbound Malicious Flows Allowed | 0
