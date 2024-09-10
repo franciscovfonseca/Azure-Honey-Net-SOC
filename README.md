@@ -85,7 +85,11 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
 
 - [Investigate & Work the Incidents](https://github.com/franciscovfonseca/Working-Incidents-and-Incident-Response/blob/main/README.md) being generated within Microsoft Sentinel ➜ in accordance with the **NIST 800-61 Incident Management Lifecycle**.
 
-- After Addressing the Incidents & Identifying Vulnerabilities ➜ Harden the Environment by applying **Security Best Practices and Azure-specific Recommendations**.
+- After Addressing the Incidents & Identifying Vulnerabilities ➜ Harden the Cloud Environment by:
+
+  - [Enabling Microsoft Defender for Cloud Regulatory Compliance for NIST 800-53](https://github.com/franciscovfonseca/Securing-SOC-Environment-Part-1/blob/main/README.md).
+
+  - [Implementing Security Controls from NIST 800-53 Control SC-7 - Boundary Protection](https://github.com/franciscovfonseca/Secure-SOC-Environmentn-Part-2/blob/main/README.md).
 
   </details>
 
