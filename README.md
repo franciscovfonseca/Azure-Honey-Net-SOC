@@ -315,11 +315,15 @@ The following table shows the Metrics we measured in our Environment for another
 | SecurityIncident (Sentinel Incidents)        | 0
 | NSG Inbound Malicious Flows Allowed | 0
 
-<br />
-<br />
+<br>
+
+<br>
+
+<br>
+
 
 <details close> 
-<summary> <h3> 🎯 Approach to Handling High-Priority Incidents with NIST Guidelines & Security Controls</h3> </summary>
+<summary> <h2> 🎯 Approach to Handling High-Priority Incidents with NIST Guidelines & Security Controls</h2> </summary>
 
 <br>
 
@@ -383,7 +387,7 @@ I used **Microsoft Sentinel** to Generate Alerts and Incidents based on the inge
   
 Furthermore, I assessed the Security Metrics in a initially Insecure Environment, *BEFORE* Implementing of Security Controls, and then *AFTER* doing so.
   
-The Substantial Decrease in Security Events and Incidents Post-Implementation of **Security Measures** showcases how important they were in **Fortifying our Cloud Environment**.
+The substantial decrease in Security Events and Incidents Post-Implementation of **Security Measures** showcases how important they were in **Fortifying our Cloud Environment**.
 <br />
 <br />
 
