@@ -4,7 +4,7 @@
 
 <br />
 
-![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/b6f385a6-3b8f-4eb2-a3f4-759adb34e7fc)
+![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/7546a0f0-1e68-47a4-9d91-a24a233f0967e)
  
 ## Introduction
 
@@ -131,7 +131,7 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
 <br>
  
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/5cf1c278-756a-4bcb-a08f-271078a8bcba" height="70%" width="70%" alt="9"/><br />
+<img src="https://github.com/user-attachments/assets/6eaabee4-606d-41c8-923f-e9c13c63cf58" height="80%" width="80%" alt="9"/><br />
 
  <br />
 
@@ -157,7 +157,7 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
 <br>
  
 <p align="center">
-<img src="https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/5789d984-10bc-4ada-8dc7-763722ad9b67" height="70%" width="70%" alt="9"/><br />
+<img src="https://github.com/user-attachments/assets/e62f66a3-02ab-4d15-814e-1315cc76f8a6" height="80%" width="80%" alt="9"/><br />
 
 <br>
 
