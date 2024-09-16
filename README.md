@@ -59,7 +59,7 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
 
 - [Enable Microsoft Defender for Cloud](https://github.com/franciscovfonseca/Enable-Microsoft-Defender-for-Cloud/blob/main/README.md) to gives us a highlevel view of our Azure Environment in terms of Security and Secure Score.
 
-- [Configure the Logs from the Virtual Machines & NSGs](https://github.com/franciscovfonseca/Enable-Log-Collection-for-VMs-and-NSGs/edit/main/README.md) to be sent into our Log Analytics Workspace.
+- [Configure the Logs from the Virtual Machines & NSGs](https://github.com/franciscovfonseca/Enable-Log-Collection-for-VMs-and-NSGs/blob/main/README.md) to be sent into our Log Analytics Workspace.
 
 - [Ingest the Logs from Microsoft Entra ID](https://github.com/franciscovfonseca/Microsoft-Entra-ID-Logging/blob/main/README.md) into our Log Analytics Workspace.
 
