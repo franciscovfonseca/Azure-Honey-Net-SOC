@@ -23,7 +23,7 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
 <details close> 
 <summary> For the Post-Remediation phase of this Project and after a second 24-hour Observation Period, these were the Metrics collected:</summary>
 
-- ```SecurityEven``` ➜ Windows Event Logs
+- ```SecurityEvent``` ➜ Windows Event Logs
 
 - ```Syslog``` ➜ Linux Event Logs
 
