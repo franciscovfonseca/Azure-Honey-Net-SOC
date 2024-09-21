@@ -21,7 +21,7 @@ Following that, I configured Log Collection on the Insecure Environment, set Sec
 After Investigating the Incidents that Microsoft Sentinel generated during that period, I incorporated Security Controls to address the Incidents and Harden our Environment, based on recommendations from **Microsoft Defender (*NIST 800-53*)**.
 
 <details close> 
-<summary> For the Post-Remediation phase of this Project and after a second 24-hour Observation Period, these were the Metrics collected:</summary>
+<summary> For the Post-Remediation phase of this Project and after a second 24-hour Observation Period, these were the Security Metrics collected:</summary>
 
 - ```SecurityEvent``` ➜ Windows Event Logs
 
@@ -47,8 +47,6 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
 - [Deploy 2 Vulnerable Virtual Machines](https://github.com/franciscovfonseca/Setting-Up-Vulnerable-VMs-in-Azure/blob/main/README.md) in Azure, simulating an Insecure Environment.
 
 - [Disable the Windows VM's Internal Firewall & Installed a SQL Server Database](https://github.com/franciscovfonseca/Disable-Windows-Firewall-Install-SQL-Server-and-Create-Vulnerabilities/blob/main/README.md) inside of it, in order to give bad actors a chance to Discover our VMs and Generate Logs.
-
-- [Create a 3ʳᵈ Virtual Machine](https://github.com/franciscovfonseca/Disable-Windows-Firewall-Install-SQL-Server-and-Create-Vulnerabilities/blob/main/README.md) called ```attack-vm``` to Perform Actions against our Environment & Observe the Logs Generated from those Actions.
 
   </details>
   
