@@ -223,7 +223,7 @@ This visualization underscores the importance of implementing proper Security Me
 
 <br>
 
-![NSG Allowed Inbound Malicious Flows](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/49108ae2-03f1-4e14-ab9c-0d634631d949)<br>
+![NSG Allowed Inbound Malicious Flows](https://github.com/user-attachments/assets/b4921d87-02c4-4ddf-bf40-0a37b6d35192)<br>
 
 <br>
 
@@ -239,7 +239,7 @@ This serves as a reminder of the importance of securing Linux servers with **Str
 
 <br>
 
-![Linux Syslog Auth Failures](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/71ba5813-06ac-43a4-942b-997d10f839a5)<br>
+![Linux Syslog Auth Failures](https://github.com/user-attachments/assets/83911862-03bb-4f8c-8cdb-99fde9a86391)<br>
 
 <br>
 
@@ -255,7 +255,7 @@ The visualization emphasizes the need for **Securing Remote Access** and **File 
  
 <br>
 
-![Windows RDP/SMB Auth Failures](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/7646c9c6-a01d-4905-ad87-97f8afaf202f)<br>
+![Windows RDP/SMB Auth Failures](https://github.com/user-attachments/assets/506e5e97-90a2-48c0-8f9d-748a0023cf47)<br>
 
 <br>
 
@@ -271,7 +271,7 @@ The Map Highlights the Exact Location from which these **Attacks or Login Attemp
 
 <br>
 
-![Windows RDP/SMB Auth Failures](https://github.com/franciscovfonseca/Azure-Honey-Net-SOC/assets/172988970/7646c9c6-a01d-4905-ad87-97f8afaf202f)<br>
+![Windows RDP/SMB Auth Failures](https://github.com/user-attachments/assets/753fdcb6-fca5-4039-a11d-408c47115557)<br>
 
 <br>
 
