@@ -12,7 +12,7 @@
 
 In this Project I built a Honeynet & SOC Environment in **Microsoft Azure**.
 
-I used **Log Analytics** to Ingest Logs from various sources into our Environment, than leveraged **Microsoft Sentinel** to Build Attack Maps, Trigger Alerts & Create Incidents.
+I used **Log Analytics** to Ingest Logs from various sources into our Environment, then leveraged **Microsoft Sentinel** to Build Attack Maps, Trigger Alerts & Create Incidents.
 
 I also Enabled **Microsoft Defender for Cloud** as a Data Source for the Log Analytics Workspace and to assess the Virtual Machines' Configurations relative to *Regulatory Frameworks & Security Controls*.
 
