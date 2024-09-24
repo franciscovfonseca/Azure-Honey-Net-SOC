@@ -1,6 +1,6 @@
 <br />
 
-<h1 align="center">☁️🔐 Building a SOC & Honeynet in Azure (Live Traffic) 🔐☁️</h1> 
+<h1 align="center">Building a SOC Environment in Azure with Live Traffic</h1> 
 
 <br />
 
