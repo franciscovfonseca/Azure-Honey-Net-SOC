@@ -295,7 +295,7 @@ The following table shows the Metrics we measured in our **Insecure Environment*
 | ------------------------ | -----
 | SecurityEvent (Windows VM)            | 19470
 | Syslog (Linux VM)                   | 3028
-| SecurityAlert (Microsoft Defender for Cloud            | 10
+| SecurityAlert (Microsoft Defender for Cloud)            | 10
 | SecurityIncident (Sentinel Incidents)        | 348
 | NSG Inbound Malicious Flows Allowed | 843
 
@@ -313,7 +313,7 @@ The following table shows the Metrics we measured in our Environment for another
 | ------------------------ | -----
 | SecurityEvent (Windows VM)            | 8778
 | Syslog (Linux VM)                   | 25
-| SecurityAlert (Microsoft Defender for Cloud            | 0
+| SecurityAlert (Microsoft Defender for Cloud)            | 0
 | SecurityIncident (Sentinel Incidents)        | 0
 | NSG Inbound Malicious Flows Allowed | 0
 
