@@ -116,7 +116,6 @@ After Investigating the Incidents that Microsoft Sentinel generated during that 
 - **Microsoft Defender for Cloud** to Protect Cloud Resources
 - **Windows Remote Desktop** for Remote Access
 - **Command Line Interface** (CLI) for System Management
-- **PowerShell** for Automation and Configuration Management
 - [NIST SP 800-53 Revision 5](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final) for Security Controls
 - [NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) for Incident Handling Guidance
 
