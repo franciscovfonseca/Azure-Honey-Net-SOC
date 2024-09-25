@@ -291,13 +291,13 @@ The Map Highlights the Exact Location from which these **Attacks or Login Attemp
 
 The following table shows the Metrics we measured in our **Insecure Environment** for 24 hours:
 
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent (Windows VM)            | 19470
-| Syslog (Linux VM)                   | 3028
-| SecurityAlert (Microsoft Defender for Cloud)            | 10
-| SecurityIncident (Sentinel Incidents)        | 348
-| NSG Inbound Malicious Flows Allowed | 843
+| Metric                               |    Count    |
+| ------------------------------------ |:-----------:|
+| SecurityEvent (Windows VM)           |   19470     |
+| Syslog (Linux VM)                    |   3028      |
+| SecurityAlert (Microsoft Defender for Cloud) |    10       |
+| SecurityIncident (Sentinel Incidents) |   348       |
+| NSG Inbound Malicious Flows Allowed  |   843       |
 
 <br />
 <br />
@@ -309,13 +309,13 @@ The following table shows the Metrics we measured in our **Insecure Environment*
 
 The following table shows the Metrics we measured in our Environment for another 24 hours, but *AFTER* I applied **Security Controls**:
 
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent (Windows VM)            | 8778
-| Syslog (Linux VM)                   | 25
-| SecurityAlert (Microsoft Defender for Cloud)            | 0
-| SecurityIncident (Sentinel Incidents)        | 0
-| NSG Inbound Malicious Flows Allowed | 0
+| Metric                               |    Count | Change Post-Hardening  |
+| ------------------------------------ |:--------:|:----------------------:|
+| SecurityEvent (Windows VM)           |   8778   |    **-54.92%**          |
+| Syslog (Linux VM)                    |    25    |    **-99.17%**          |
+| SecurityAlert (Microsoft Defender for Cloud) |    0     |    **-100.00%**         |
+| SecurityIncident (Sentinel Incidents) |    0     |    **-100.00%**         |
+| NSG Inbound Malicious Flows Allowed  |    0     |    **-100.00%**         |
 
 <br>
 
@@ -389,7 +389,7 @@ I used **Microsoft Sentinel** to Generate Alerts and Incidents based on the inge
   
 Furthermore, I assessed the Security Metrics in a initially Insecure Environment, *BEFORE* Implementing of Security Controls, and then *AFTER* doing so.
   
-The substantial decrease in Security Events and Incidents Post-Implementation of **Security Measures** showcases how important they were in **Fortifying our Cloud Environment**.
+The substantial decrease in Security Events and Incidents Post-Implementation of **Security Measures** showcases how important they were in **fortifying our Cloud Environment**.
 <br />
 <br />
 
